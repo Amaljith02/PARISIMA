@@ -39,7 +39,7 @@ p {
 }
 .swiper-slide-active {
   z-index: 5;
-  animation: swiper-fade 0.7s linear;
+  animation: swiper-fade 0.2s linear;
   opacity: 1;
 }
 
@@ -91,5 +91,3 @@ p {
   }
 }
 
-
-/* .lll{} */

@@ -257,6 +257,7 @@ const index = () => {
         </div>
       </div>
       {/* --------We Build Leading Edge page Ends-------------- */}
+
       {/* --------CEO Message page starts-------------- */}
       <div className={home.ceo_message_page}>
         <div className={`${home.ceo_message_page_container} container`}>
@@ -287,6 +288,7 @@ const index = () => {
         </div>
       </div>
       {/* --------CEO Message page ends-------------- */}
+
       {/* --------How we work page starts-------------- */}
       <div className={home.how_we_work_main_page}>
         <div className={`${home.how_we_work_container} container`}>
@@ -407,8 +409,40 @@ const index = () => {
           </div>
         </div>
       </div>
-
       {/* --------How we work page ends-------------- */}
+      {/* --------Sectors page start-------------- */}
+
+      <div
+        className={home.sectors_main_page}
+        style={{
+          background: `url(/images/build-leading-edge.png) no-repeat center/cover `,
+        }}
+      >
+        <div className={`${home.sectors_main_page_container} container`}>
+          <div className={`${home.sectors_head_sec} `}>
+            <div className={`${home.sectors_head_text_sec} `}>
+              <h3>SECTORS</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+            </div>
+            <Link href={"/"}>
+              VIEW ALL
+              <div className="button_right_arrow_img">
+                <Image
+                  src={"/images/p1-btn-arrow.png"}
+                  height={16}
+                  width={18}
+                  alt=""
+                />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* --------Sectors page ends-------------- */}
     </div>
   );
 };
