@@ -747,7 +747,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 50px;
   /* background-color: red; */
 }
 .what_our_clients_say_page_text_sec {
@@ -809,36 +809,49 @@
   width: 100%;
 }
 .what_our_clients_say_page_slide_sec {
-  /* width: 50%; */
+  width: 50%;
+  height: 600px;
   /* background-color: red; */
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.what_our_clients_say_page_slider {
+  width: 100%;
+  height: 100%;
+}
+.what_our_clients_say_page_slide_next_btn,
 .what_our_clients_say_page_slide_prev_btn {
   height: 60px;
   width: 60px;
   background-color: #1a2c3a;
   position: absolute;
-  left: -30px;
   z-index: 5;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.what_our_clients_say_page_slide_prev_btn {
+  left: 20px;
 }
 .what_our_clients_say_page_slide_next_btn {
-  height: 60px;
-  width: 60px;
-  background-color: #1a2c3a;
-  position: absolute;
-  right: -30px;
-  z-index: 5;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  right: 20px;
+}
+.what_our_clients_say_page_slide_next_btn:hover,
+.what_our_clients_say_page_slide_prev_btn:hover {
+  background-color: #ffffff;
+  border: 2px solid #1a2c3a94;
+}
+.what_our_clients_say_page_slide_next_btn:hover
+  .what_our_clients_say_page_slide_btn_image
+  > img,
+.what_our_clients_say_page_slide_prev_btn:hover
+  .what_our_clients_say_page_slide_btn_image
+  > img {
+  filter: invert(1);
 }
 .what_our_clients_say_page_slide_btn_image {
   height: auto;
@@ -854,10 +867,11 @@
   max-width: 700px;
   width: 100%;
   margin: auto;
+  margin-top: 70px;
   box-sizing: border-box;
-  /* background-color: cyan; */
+  background-color: rgb(255, 255, 255);
   position: relative;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 100px 8% 50px 7%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.068);
 }
@@ -870,9 +884,9 @@
   top: 0;
   background-image: linear-gradient(
     to top,
-    rgba(215, 251, 255, 0) 5%,
+    rgba(215, 251, 255, 0) 0%,
     rgba(0, 180, 181, 1) 47%,
-    rgba(205, 255, 254, 0) 95%
+    rgba(205, 255, 254, 0) 100%
   );
 }
 .what_our_clients_say_page_slide_card::before {
@@ -884,9 +898,9 @@
   top: 0;
   background-image: linear-gradient(
     to top,
-    rgba(215, 251, 255, 0) 5%,
+    rgba(215, 251, 255, 0) 0%,
     rgba(0, 180, 181, 1) 47%,
-    rgba(205, 255, 254, 0) 95%
+    rgba(205, 255, 254, 0) 100%
   );
 }
 .what_our_clients_say_page_slide_card_profile {

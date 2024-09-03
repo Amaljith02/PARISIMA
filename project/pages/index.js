@@ -10,7 +10,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import {
+  EffectCards,
+  EffectFade,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
 const index = () => {
   return (
     <div>
@@ -428,8 +433,8 @@ const index = () => {
               <h3 className="pt-sans">SECTORS</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard dummy
-                text ever since the 1500s.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s.
               </p>
             </div>
             <Link
@@ -472,8 +477,8 @@ const index = () => {
               <h3 className="pt-sans">AVIATION</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard dummy
-                text ever since the 1500s.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s.
               </p>
               <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
                 LEARN MORE
@@ -510,8 +515,8 @@ const index = () => {
               <h3 className="pt-sans">IT AND TELECOMS</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard dummy
-                text ever since the 1500s.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s.
               </p>
               <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
                 LEARN MORE
@@ -548,8 +553,8 @@ const index = () => {
               <h3 className="pt-sans">DIGITAL</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard dummy
-                text ever since the 1500s.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s.
               </p>
               <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
                 LEARN MORE
@@ -586,8 +591,8 @@ const index = () => {
               <h3 className="pt-sans">EVENT MANAGEMENT</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard dummy
-                text ever since the 1500s.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s.
               </p>
               <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
                 LEARN MORE
@@ -756,7 +761,10 @@ const index = () => {
             </div>
             {/* ///////// */}
             <div className={home.what_our_clients_say_page_slide_sec}>
-              <div className={home.what_our_clients_say_page_slide_prev_btn}>
+              <div
+                className={home.what_our_clients_say_page_slide_prev_btn}
+                id="what_our_clients_say_page_slide_prev_btn"
+              >
                 <div className={home.what_our_clients_say_page_slide_btn_image}>
                   <Image
                     src={"/images/btn-arrow1.png"}
@@ -766,7 +774,10 @@ const index = () => {
                   />
                 </div>{" "}
               </div>
-              <div className={home.what_our_clients_say_page_slide_next_btn}>
+              <div
+                className={home.what_our_clients_say_page_slide_next_btn}
+                id="what_our_clients_say_page_slide_next_btn"
+              >
                 <div className={home.what_our_clients_say_page_slide_btn_image}>
                   <Image
                     src={"/images/btn-arrow1.png"}
@@ -777,107 +788,330 @@ const index = () => {
                   />
                 </div>{" "}
               </div>
-
-              <div className={home.what_our_clients_say_page_slide_card}>
-                <div
-                  className={home.what_our_clients_say_page_slide_card_profile}
-                >
-                  <Image
-                    src={"/images/profile-lady1.png"}
-                    height={108}
-                    width={108}
-                    alt=""
-                  />
-                </div>
-                <div
-                  className={
-                    home.what_our_clients_say_page_slide_card_quote_icon
-                  }
-                >
-                  <Image
-                    src={"/images/quote-mark.png"}
-                    height={63}
-                    width={63}
-                    alt=""
-                  />
-                </div>
-                <p>
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  egestas id orci in sodales. Sed commodo orci consectetur
-                  ultrices scelerisque. Aliquam a finibus velit. Maecenas at
-                  nisi finibus, lacinia augue eu, vehicula arcu. Praesent et
-                  magna nisl. Quisque congue orci eu nulla consectetur
-                  tincidunt. Sed ullamcorper rutrum mi, sed gravida augue
-                  porttitor...”
-                </p>
-                <div
-                  className={
-                    home.what_our_clients_say_page_slide_card_rating_sec
-                  }
-                >
-                  <div
-                    className={
-                      home.what_our_clients_say_page_slide_card_rating_icon
-                    }
-                  >
-                    <Image
-                      src={"/images/rating.png"}
-                      height={19}
-                      width={20}
-                      alt=""
-                    />
+              <Swiper
+                effect={"cards"}
+                // grabCursor={true}
+                direction="vertical"
+                navigation={{
+                  nextEl: "#what_our_clients_say_page_slide_next_btn",
+                  prevEl: "#what_our_clients_say_page_slide_prev_btn",
+                }}
+                modules={[EffectCards, Navigation]}
+                className={` mySwiper ${home.what_our_clients_say_page_slider}`}
+              >
+                <SwiperSlide>
+                  <div className={home.what_our_clients_say_page_slide_card}>
+                    <div
+                      className={
+                        home.what_our_clients_say_page_slide_card_profile
+                      }
+                    >
+                      <Image
+                        src={"/images/profile-lady1.png"}
+                        height={108}
+                        width={108}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={
+                        home.what_our_clients_say_page_slide_card_quote_icon
+                      }
+                    >
+                      <Image
+                        src={"/images/quote-mark.png"}
+                        height={63}
+                        width={63}
+                        alt=""
+                      />
+                    </div>
+                    <p>
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis egestas id orci in sodales. Sed commodo orci
+                      consectetur ultrices scelerisque. Aliquam a finibus velit.
+                      Maecenas at nisi finibus, lacinia augue eu, vehicula arcu.
+                      Praesent et magna nisl. Quisque congue orci eu nulla
+                      consectetur tincidunt. Sed ullamcorper rutrum mi, sed
+                      gravida augue porttitor...”
+                    </p>
+                    <div
+                      className={
+                        home.what_our_clients_say_page_slide_card_rating_sec
+                      }
+                    >
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4 className="pt-sans">John Dae</h4>
                   </div>
-                  <div
-                    className={
-                      home.what_our_clients_say_page_slide_card_rating_icon
-                    }
-                  >
-                    <Image
-                      src={"/images/rating.png"}
-                      height={19}
-                      width={20}
-                      alt=""
-                    />
+                </SwiperSlide>{" "}
+                <SwiperSlide>
+                  <div className={home.what_our_clients_say_page_slide_card}>
+                    <div
+                      className={
+                        home.what_our_clients_say_page_slide_card_profile
+                      }
+                    >
+                      <Image
+                        src={"/images/profile-lady1.png"}
+                        height={108}
+                        width={108}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={
+                        home.what_our_clients_say_page_slide_card_quote_icon
+                      }
+                    >
+                      <Image
+                        src={"/images/quote-mark.png"}
+                        height={63}
+                        width={63}
+                        alt=""
+                      />
+                    </div>
+                    <p>
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis egestas id orci in sodales. Sed commodo orci
+                      consectetur ultrices scelerisque. Aliquam a finibus velit.
+                      Maecenas at nisi finibus, lacinia augue eu, vehicula arcu.
+                      Praesent et magna nisl. Quisque congue orci eu nulla
+                      consectetur tincidunt. Sed ullamcorper rutrum mi, sed
+                      gravida augue porttitor...”
+                    </p>
+                    <div
+                      className={
+                        home.what_our_clients_say_page_slide_card_rating_sec
+                      }
+                    >
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4 className="pt-sans">John Dae</h4>
                   </div>
-                  <div
-                    className={
-                      home.what_our_clients_say_page_slide_card_rating_icon
-                    }
-                  >
-                    <Image
-                      src={"/images/rating.png"}
-                      height={19}
-                      width={20}
-                      alt=""
-                    />
+                </SwiperSlide>{" "}
+                <SwiperSlide>
+                  <div className={home.what_our_clients_say_page_slide_card}>
+                    <div
+                      className={
+                        home.what_our_clients_say_page_slide_card_profile
+                      }
+                    >
+                      <Image
+                        src={"/images/profile-lady1.png"}
+                        height={108}
+                        width={108}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={
+                        home.what_our_clients_say_page_slide_card_quote_icon
+                      }
+                    >
+                      <Image
+                        src={"/images/quote-mark.png"}
+                        height={63}
+                        width={63}
+                        alt=""
+                      />
+                    </div>
+                    <p>
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis egestas id orci in sodales. Sed commodo orci
+                      consectetur ultrices scelerisque. Aliquam a finibus velit.
+                      Maecenas at nisi finibus, lacinia augue eu, vehicula arcu.
+                      Praesent et magna nisl. Quisque congue orci eu nulla
+                      consectetur tincidunt. Sed ullamcorper rutrum mi, sed
+                      gravida augue porttitor...”
+                    </p>
+                    <div
+                      className={
+                        home.what_our_clients_say_page_slide_card_rating_sec
+                      }
+                    >
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={
+                          home.what_our_clients_say_page_slide_card_rating_icon
+                        }
+                      >
+                        <Image
+                          src={"/images/rating.png"}
+                          height={19}
+                          width={20}
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4 className="pt-sans">John Dae</h4>
                   </div>
-                  <div
-                    className={
-                      home.what_our_clients_say_page_slide_card_rating_icon
-                    }
-                  >
-                    <Image
-                      src={"/images/rating.png"}
-                      height={19}
-                      width={20}
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    className={
-                      home.what_our_clients_say_page_slide_card_rating_icon
-                    }
-                  >
-                    <Image
-                      src={"/images/rating.png"}
-                      height={19}
-                      width={20}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <h4 className="pt-sans">John Dae</h4>
-              </div>
+                </SwiperSlide>{" "}
+              </Swiper>
             </div>
           </div>
         </div>
