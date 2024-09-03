@@ -428,7 +428,7 @@ const index = () => {
               <h3 className="pt-sans">SECTORS</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the industry&apos;s standard dummy
                 text ever since the 1500s.
               </p>
             </div>
@@ -472,7 +472,7 @@ const index = () => {
               <h3 className="pt-sans">AVIATION</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the industry&apos;s standard dummy
                 text ever since the 1500s.
               </p>
               <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
@@ -510,7 +510,7 @@ const index = () => {
               <h3 className="pt-sans">IT AND TELECOMS</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the industry&apos;s standard dummy
                 text ever since the 1500s.
               </p>
               <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
@@ -548,7 +548,7 @@ const index = () => {
               <h3 className="pt-sans">DIGITAL</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the industry&apos;s standard dummy
                 text ever since the 1500s.
               </p>
               <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
@@ -586,7 +586,7 @@ const index = () => {
               <h3 className="pt-sans">EVENT MANAGEMENT</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the industry&apos;s standard dummy
                 text ever since the 1500s.
               </p>
               <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
