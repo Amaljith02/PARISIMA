@@ -68,6 +68,15 @@ p {
   background: var(--swiper-pagination-color, #ffffff) !important;
 }
 /* ----button Right Arrow icon ----- */
+/* <div className="button_right_arrow_img">
+<Image
+  src={"/images/p1-btn-arrow.png"}
+  height={16}
+  width={18}
+  alt=""
+/>
+</div> */
+
 .button_right_arrow_img {
   height: auto;
   width: 18px;

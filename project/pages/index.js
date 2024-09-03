@@ -21,6 +21,7 @@ const index = () => {
           pagination={{
             clickable: true,
           }}
+          loop={true}
           speed={5000}
           effect="fade"
           modules={[Pagination, EffectFade]}
@@ -48,7 +49,7 @@ const index = () => {
                   href={
                     "https://www.figma.com/design/erkKwvpMGzcSm3Y4JEt40Y/Untitled?t=7e1bgitnqcAayJHE-0"
                   }
-                  className={home.gcc_expansion_container_btn}
+                  className={`${home.gcc_expansion_container_btn} pt-sans`}
                 >
                   GET STARTED{" "}
                   <div className="button_right_arrow_img">
@@ -103,7 +104,7 @@ const index = () => {
                   href={
                     "https://www.figma.com/design/erkKwvpMGzcSm3Y4JEt40Y/Untitled?t=7e1bgitnqcAayJHE-0"
                   }
-                  className={home.gcc_expansion_container_btn}
+                  className={`${home.gcc_expansion_container_btn} pt-sans`}
                 >
                   GET STARTED{" "}
                   <div className="button_right_arrow_img">
@@ -197,7 +198,10 @@ const index = () => {
                 Assessment Centres, Parisima has the capability to create a
                 unique solution to meet your needs.
               </p>
-              <Link href={""} className={home.build_leading_edge_text_btn}>
+              <Link
+                href={""}
+                className={`${home.build_leading_edge_text_btn} pt-sans`}
+              >
                 LEARN MORE
                 <div className="button_right_arrow_img">
                   <Image
@@ -212,7 +216,7 @@ const index = () => {
           </div>
           <div className={`${home.build_leading_edge_count_sec}  `}>
             <div className={`${home.build_leading_edge_count_card}  `}>
-              <div className={`${home.build_leading_edge_count_card_logo} `}>
+              <div className={`${home.build_leading_edge_count_card_logo1} `}>
                 <Image
                   src={"/images/countup1.png"}
                   height={120}
@@ -226,7 +230,7 @@ const index = () => {
               </span>
             </div>
             <div className={`${home.build_leading_edge_count_card}  `}>
-              <div className={`${home.build_leading_edge_count_card_logo} `}>
+              <div className={`${home.build_leading_edge_count_card_logo2} `}>
                 <Image
                   src={"/images/countup2.png"}
                   height={120}
@@ -240,7 +244,7 @@ const index = () => {
               </span>
             </div>
             <div className={`${home.build_leading_edge_count_card}  `}>
-              <div className={`${home.build_leading_edge_count_card_logo} `}>
+              <div className={`${home.build_leading_edge_count_card_logo3} `}>
                 <Image
                   src={"/images/countup3.png"}
                   height={120}
@@ -410,8 +414,8 @@ const index = () => {
         </div>
       </div>
       {/* --------How we work page ends-------------- */}
-      {/* --------Sectors page start-------------- */}
 
+      {/* --------Sectors page start-------------- */}
       <div
         className={home.sectors_main_page}
         style={{
@@ -421,14 +425,17 @@ const index = () => {
         <div className={`${home.sectors_main_page_container} container`}>
           <div className={`${home.sectors_head_sec} `}>
             <div className={`${home.sectors_head_text_sec} `}>
-              <h3>SECTORS</h3>
+              <h3 className="pt-sans">SECTORS</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s.
               </p>
             </div>
-            <Link href={"/"}>
+            <Link
+              href={"/"}
+              className={`${home.sectors_head_view_all_btn} pt-sans`}
+            >
               VIEW ALL
               <div className="button_right_arrow_img">
                 <Image
@@ -440,9 +447,442 @@ const index = () => {
               </div>
             </Link>
           </div>
+
+          <div className={`${home.sectors_card_sec} `}>
+            <div className={`${home.sectors_card} `}>
+              <div className={`${home.sectors_card_img_background_sec} `}>
+                <div className={`${home.sectors_card_img_background} `}>
+                  <Image
+                    src={"/images/sectors-card-back.png"}
+                    height={155}
+                    width={161}
+                    alt=""
+                  />
+                </div>
+                <div className={`${home.sectors_card_img_logo} `}>
+                  <Image
+                    src={"/images/sectors-card-img1.png"}
+                    height={90}
+                    width={90}
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <h3 className="pt-sans">AVIATION</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
+                LEARN MORE
+                <div className="button_right_arrow_img">
+                  <Image
+                    src={"/images/p1-btn-arrow.png"}
+                    height={16}
+                    width={18}
+                    alt=""
+                  />
+                </div>
+              </Link>
+            </div>
+            <div className={`${home.sectors_card} `}>
+              <div className={`${home.sectors_card_img_background_sec} `}>
+                <div className={`${home.sectors_card_img_background} `}>
+                  <Image
+                    src={"/images/sectors-card-back.png"}
+                    height={155}
+                    width={161}
+                    alt=""
+                  />
+                </div>
+                <div className={`${home.sectors_card_img_logo} `}>
+                  <Image
+                    src={"/images/sectors-card-img2.png"}
+                    height={90}
+                    width={90}
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <h3 className="pt-sans">IT AND TELECOMS</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
+                LEARN MORE
+                <div className="button_right_arrow_img">
+                  <Image
+                    src={"/images/p1-btn-arrow.png"}
+                    height={16}
+                    width={18}
+                    alt=""
+                  />
+                </div>
+              </Link>
+            </div>
+            <div className={`${home.sectors_card} `}>
+              <div className={`${home.sectors_card_img_background_sec} `}>
+                <div className={`${home.sectors_card_img_background} `}>
+                  <Image
+                    src={"/images/sectors-card-back.png"}
+                    height={155}
+                    width={161}
+                    alt=""
+                  />
+                </div>
+                <div className={`${home.sectors_card_img_logo} `}>
+                  <Image
+                    src={"/images/sectors-card-img2.png"}
+                    height={90}
+                    width={90}
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <h3 className="pt-sans">DIGITAL</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
+                LEARN MORE
+                <div className="button_right_arrow_img">
+                  <Image
+                    src={"/images/p1-btn-arrow.png"}
+                    height={16}
+                    width={18}
+                    alt=""
+                  />
+                </div>
+              </Link>
+            </div>
+            <div className={`${home.sectors_card} `}>
+              <div className={`${home.sectors_card_img_background_sec} `}>
+                <div className={`${home.sectors_card_img_background} `}>
+                  <Image
+                    src={"/images/sectors-card-back.png"}
+                    height={155}
+                    width={161}
+                    alt=""
+                  />
+                </div>
+                <div className={`${home.sectors_card_img_logo} `}>
+                  <Image
+                    src={"/images/sectors-card-img1.png"}
+                    height={90}
+                    width={90}
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <h3 className="pt-sans">EVENT MANAGEMENT</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <Link href={"/"} className={`${home.sectors_card_btn} pt-sans`}>
+                LEARN MORE
+                <div className="button_right_arrow_img">
+                  <Image
+                    src={"/images/p1-btn-arrow.png"}
+                    height={16}
+                    width={18}
+                    alt=""
+                  />
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
       {/* --------Sectors page ends-------------- */}
+
+      {/* --------Opportunity accross page starts-------------- */}
+      <div className={home.opportunities_main_page}>
+        <div className={`${home.opportunities_main_page_container} container`}>
+          <div className={home.opportunities_text_sec}>
+            <h3 className="pt-sans">OPPORTUNITIES ACROSS THE GCC REGION</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolored exercitation
+            </p>
+            <Link
+              href={"/"}
+              className={`${home.opportunities_text_sec_btn} pt-sans`}
+            >
+              EXPLORE OPPORTUNITIES
+              <div className="button_right_arrow_img">
+                <Image
+                  src={"/images/p1-btn-arrow.png"}
+                  height={16}
+                  width={18}
+                  alt=""
+                  style={{ filter: "invert(1)" }}
+                />
+              </div>{" "}
+            </Link>
+          </div>
+          <div className={home.opportunities_map_sec}>
+            <div className={home.opportunities_map_img}>
+              <Image
+                src={"/images/map-dots.png"}
+                height={630}
+                width={730}
+                alt=""
+              />
+            </div>
+
+            <div className={home.opportunities_map_btn_group}>
+              <Link href={"/"} className={home.opportunities_map_btn}>
+                {" "}
+                Dubai
+              </Link>
+              <Link href={"/"} className={home.opportunities_map_btn}>
+                {" "}
+                Abu Dhabi
+              </Link>
+              <Link href={"/"} className={home.opportunities_map_btn}>
+                {" "}
+                Riyadh
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* --------Opportunity accross page ends-------------- */}
+
+      {/* --------Parisima Talent Continues page starts-------------- */}
+      <div className={home.parisima_talent_main_page}>
+        <div
+          className={`${home.parisima_talent_main_page_container} container`}
+        >
+          <div className={`${home.parisima_talent_page_text_sec} pt-sans`}>
+            PARISIMA TALENT CONTINUES GCC EXPANSION WITH NEW OFFICE IN KSA
+          </div>
+
+          <div className={home.parisima_talent_background_image}>
+            {" "}
+            <Image
+              src={"/images/parisima-talent-img.png"}
+              width={1250}
+              height={490}
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      {/* --------Parisima Talent Continues page ends-------------- */}
+
+      {/* --------What Our Clients Say page Start-------------- */}
+      <div className={home.what_our_clients_say_page}>
+        <div
+          className={`${home.what_our_clients_say_page_container} container`}
+        >
+          <div className={`${home.what_our_clients_say_title} pt-sans`}>
+            WHAT OUR CLIENTS SAY ABOUT US{" "}
+          </div>
+
+          <div className={home.what_our_clients_say_page_content_container}>
+            <div className={home.what_our_clients_say_page_text_sec}>
+              <h3 className="pt-sans">
+                WHAT OUR CLIENTS SAY <br /> ABOUT US
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                sagittis nunc sit amet nisl blandit, nec aliquam nisi eleifend.
+                Proin vel odio eu sem placerat lacinia ut non nisi. Nam maximus
+                nunc ac nisl hendrerit, sit amet mollis nisi molestie. Nulla vel
+                nibh eget lectus suscipit iaculis.
+              </p>
+              <div className={home.what_our_clients_say_page_profile_sec}>
+                <div className={home.what_our_clients_say_page_profile_photo}>
+                  <Image
+                    src={"/images/profile-lady1.png"}
+                    height={75}
+                    width={75}
+                    alt=""
+                  />
+                </div>
+                <div className={home.what_our_clients_say_page_profile_photo}>
+                  <Image
+                    src={"/images/profile-lady2.png"}
+                    height={75}
+                    width={75}
+                    alt=""
+                  />
+                </div>
+                <div className={home.what_our_clients_say_page_profile_photo}>
+                  <Image
+                    src={"/images/profile-lady3.png"}
+                    height={75}
+                    width={75}
+                    alt=""
+                  />
+                </div>
+                <div className={home.what_our_clients_say_page_profile_photo}>
+                  <Image
+                    src={"/images/profile-lady4.png"}
+                    height={75}
+                    width={75}
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                className={`${home.what_our_clients_say_page_rating_sec} pt-sans`}
+              >
+                <div
+                  className={`${home.what_our_clients_say_page_rating_icon} `}
+                >
+                  {" "}
+                  <Image
+                    src={"/images/rating.png"}
+                    height={19}
+                    width={20}
+                    alt=""
+                  />
+                </div>
+                <b style={{ color: "black" }}>5.0</b> (5000 reviews)
+              </div>
+            </div>
+            {/* ///////// */}
+            <div className={home.what_our_clients_say_page_slide_sec}>
+              <div className={home.what_our_clients_say_page_slide_prev_btn}>
+                <div className={home.what_our_clients_say_page_slide_btn_image}>
+                  <Image
+                    src={"/images/btn-arrow1.png"}
+                    height={14}
+                    width={7}
+                    alt=""
+                  />
+                </div>{" "}
+              </div>
+              <div className={home.what_our_clients_say_page_slide_next_btn}>
+                <div className={home.what_our_clients_say_page_slide_btn_image}>
+                  <Image
+                    src={"/images/btn-arrow1.png"}
+                    height={14}
+                    width={7}
+                    alt=""
+                    style={{ transform: "rotate(180deg)" }}
+                  />
+                </div>{" "}
+              </div>
+
+              <div className={home.what_our_clients_say_page_slide_card}>
+                <div
+                  className={home.what_our_clients_say_page_slide_card_profile}
+                >
+                  <Image
+                    src={"/images/profile-lady1.png"}
+                    height={108}
+                    width={108}
+                    alt=""
+                  />
+                </div>
+                <div
+                  className={
+                    home.what_our_clients_say_page_slide_card_quote_icon
+                  }
+                >
+                  <Image
+                    src={"/images/quote-mark.png"}
+                    height={63}
+                    width={63}
+                    alt=""
+                  />
+                </div>
+                <p>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  egestas id orci in sodales. Sed commodo orci consectetur
+                  ultrices scelerisque. Aliquam a finibus velit. Maecenas at
+                  nisi finibus, lacinia augue eu, vehicula arcu. Praesent et
+                  magna nisl. Quisque congue orci eu nulla consectetur
+                  tincidunt. Sed ullamcorper rutrum mi, sed gravida augue
+                  porttitor...”
+                </p>
+                <div
+                  className={
+                    home.what_our_clients_say_page_slide_card_rating_sec
+                  }
+                >
+                  <div
+                    className={
+                      home.what_our_clients_say_page_slide_card_rating_icon
+                    }
+                  >
+                    <Image
+                      src={"/images/rating.png"}
+                      height={19}
+                      width={20}
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className={
+                      home.what_our_clients_say_page_slide_card_rating_icon
+                    }
+                  >
+                    <Image
+                      src={"/images/rating.png"}
+                      height={19}
+                      width={20}
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className={
+                      home.what_our_clients_say_page_slide_card_rating_icon
+                    }
+                  >
+                    <Image
+                      src={"/images/rating.png"}
+                      height={19}
+                      width={20}
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className={
+                      home.what_our_clients_say_page_slide_card_rating_icon
+                    }
+                  >
+                    <Image
+                      src={"/images/rating.png"}
+                      height={19}
+                      width={20}
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className={
+                      home.what_our_clients_say_page_slide_card_rating_icon
+                    }
+                  >
+                    <Image
+                      src={"/images/rating.png"}
+                      height={19}
+                      width={20}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h4 className="pt-sans">John Dae</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* --------What Our Clients Say page ends-------------- */}
     </div>
   );
 };
