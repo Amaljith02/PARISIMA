@@ -10,7 +10,6 @@
   padding-top: 10px;
   z-index: 5;
   font-family: "PT Sans", sans-serif;
-
 }
 .nav_top_body {
   width: 100%;
@@ -24,14 +23,19 @@
   gap: 30px;
 }
 .nav_top_register_btn,
-.nav_top_body_content_sec > span {
+.nav_top_body_content_sec > a {
   display: flex;
   align-items: center;
   gap: 10px;
   /* font-size: 14px; */
+  color: white;
   font-size: 0.87rem;
   font-weight: 400;
   /* background-color: red; */
+  transition: all 0.2s ease-in-out;
+}
+.nav_top_body_content_sec > a:hover {
+  color: cyan;
 }
 .nav_top_register_btn {
   display: flex;
@@ -40,7 +44,12 @@
   padding: 11px 13px;
   gap: 10px;
   border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease-in-out;
   border: 1px solid rgba(255, 255, 255, 0.384);
+}
+.nav_top_register_btn:hover {
+  background-color: rgba(255, 255, 255, 0.116);
 }
 .nav_top_register_btn > span {
   height: auto;
@@ -89,13 +98,65 @@
   font-size: 1rem;
   font-weight: 400;
 }
+.nav_menu_sec > li > a:hover {
+  color: cyan;
+}
 .nav_menu_down_arrow_icon {
   height: auto;
   width: 10px;
 }
 .nav_menu_down_arrow_icon > img {
+  transition: all 0.2s ease-in-out;
   object-fit: cover;
   display: block;
   height: auto;
   width: 100%;
+}
+.nav_dropdown_menu_sec {
+  position: relative;
+}
+.nav_dropdown_menu_list {
+  width: 250px;
+  box-sizing: border-box;
+  /* background-color: rgb(180, 255, 255); */
+  background: linear-gradient(180deg, #ffffff66, hsla(0, 0%, 100%, 0.1));
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  list-style: none;
+  position: absolute;
+  top: 70px;
+  opacity: 1;
+  animation: navbar_dropdown_list 0.3s ease;
+}
+@keyframes navbar_dropdown_list {
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+}
+.nav_dropdown_menu_list::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  top: -15px;
+  z-index: -1;
+  /* height: 30px; */
+  /* width: 30px; */
+  border-top: 15px solid #ffffff66;
+  border-left: 15px solid #ffffff66;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.nav_dropdown_menu_list > li {
+  padding: 10px 40px;
+}
+.nav_dropdown_menu_list > li > a {
+  color: white;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
 }

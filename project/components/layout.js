@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "@/components/header/index";
-// import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/index";
 
 export default function RootLayout({ children }) {
   return (
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         </Header>
         <main> {children}</main>
 
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </div>
     </React.Fragment>
   );

@@ -6,7 +6,7 @@
   scrollbar-width: none;
 }
 body {
-  font-size: 100% !important;
+  font-size: 100%;
   font-family: "Montserrat", sans-serif;
 }
 .pt-sans {
@@ -98,8 +98,5 @@ p {
     box-sizing: border-box;
     padding-left: 5%;
     padding-right: 5%;
-  }
-  body {
-    font-size: 50% !important;
   }
 }

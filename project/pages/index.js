@@ -1,4 +1,5 @@
 import React from "react";
+
 import home from "@/styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -1117,6 +1118,338 @@ const index = () => {
         </div>
       </div>
       {/* --------What Our Clients Say page ends-------------- */}
+      {/* --------Insights page Start-------------- */}
+
+      <div className={home.insights_page}>
+        <div className={`${home.insights_page_container} container`}>
+          <h3 className={`${home.insights_page_title} pt-sans`}>INSIGHTS</h3>
+
+          <p>Get the latest news and updates from our blog</p>
+          {/* --------Top Section-------- */}
+
+          <div className={home.insights_page_card_sec}>
+            <div
+              className={home.insights_page_card1}
+              style={{
+                background: `url(/images/insights-card1-back.png) no-repeat center/cover `,
+              }}
+            >
+              <span>12 July, 2022</span>
+              <h3 className="pt-sans">
+                Dulsco acquires Parisima Talent as part of an expansion plan
+              </h3>{" "}
+            </div>
+
+            <div className={home.insights_page_card2}>
+              <div className={home.insights_page_card2_img}>
+                <Image
+                  src={"/images/insights-card2-img.png"}
+                  height={295}
+                  width={505}
+                  alt=""
+                />
+              </div>
+              <span>26 September, 2019</span>
+              <h3 className="pt-sans">
+                Parisima Talent wins two awards at the Gulf Capital SME Awards
+                2019
+              </h3>
+              <p>
+                Parisima, a strategic talent advisory and delivery business, is
+                pleased to announce that it has won B2B...
+              </p>
+            </div>
+          </div>
+          {/* --------Top Section ends-------- */}
+
+          {/* --------Bottom Section-------- */}
+          <div className={home.insights_page_card_sec}>
+            <div
+              className={home.insights_page_card1}
+              style={{
+                background: `url(/images/insights-card4-back.png) no-repeat center/cover `,
+              }}
+            >
+              <span>09 September, 2019</span>
+              <h3 className="pt-sans">
+                Delivering Recruitment Process Outsourcing (RPO) solutions
+                across EMEA{" "}
+              </h3>{" "}
+            </div>
+
+            <div className={home.insights_page_card2}>
+              <div className={home.insights_page_card2_img}>
+                <Image
+                  src={"/images/insights-card3-img.png"}
+                  height={295}
+                  width={505}
+                  alt=""
+                />
+              </div>
+              <span>26 September, 2019</span>
+              <h3 className="pt-sans">
+                Parisima Talent continues GCC expansion with new office in KSA
+              </h3>
+              <p>
+                Strategic talent acquisition business Parisima Talent – a part
+                of Dulsco Group...
+              </p>
+            </div>
+          </div>
+          {/* --------Bottom Section end-------- */}
+
+          <Link href={"/"} className={`${home.insights_page_btn} pt-sans`}>
+            {" "}
+            VIEW ALL
+            <div className="button_right_arrow_img">
+              <Image
+                src={"/images/p1-btn-arrow.png"}
+                height={16}
+                width={18}
+                alt=""
+                style={{ filter: "invert(1)" }}
+              />
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      {/* --------Insights page ends-------------- */}
+      {/* --------Learn more about the group page Start-------------- */}
+      <div className={home.learn_more_about_the_group_page}>
+        <div
+          className={`${home.learn_more_about_the_group_page_container} container`}
+        >
+          <h3 className="pt-sans">LEARN MORE ABOUT THE GROUPS</h3>{" "}
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry &apos;s standard dummy
+            text ever since the 1500s.
+          </p>{" "}
+          <div className={home.learn_more_about_the_group_page_card_sec}>
+            <div className={home.learn_more_about_the_group_page_card}>
+              <div className={home.learn_more_about_the_group_page_card_img}>
+                <Image
+                  src={"/images/learn-more-logo1.png"}
+                  height={38}
+                  width={128}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className={home.learn_more_about_the_group_page_card}>
+              <div className={home.learn_more_about_the_group_page_card_img}>
+                <Image
+                  src={"/images/learn-more-logo2.png"}
+                  height={67}
+                  width={100}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className={home.learn_more_about_the_group_page_card}>
+              <div className={home.learn_more_about_the_group_page_card_img}>
+                <Image
+                  src={"/images/learn-more-logo3.png"}
+                  height={65}
+                  width={177}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className={home.learn_more_about_the_group_page_card}>
+              <div className={home.learn_more_about_the_group_page_card_img}>
+                <Image
+                  src={"/images/learn-more-logo4.png"}
+                  height={51}
+                  width={133}
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* --------Learn more about the group page ends-------------- */}
+
+      {/* --------Social Hub page Start-------------- */}
+      <div className={home.social_hub_page}>
+        <div className={`${home.social_hub_page_container} `}>
+          <h3 className="pt-sans">SOCIAL HUB</h3>
+
+          <div className={home.social_hub_slider_sec}>
+            <Swiper
+              pagination={false}
+              modules={[Pagination, Navigation]}
+              slidesPerView={5}
+              navigation={{
+                prevEl: "#social_hub_slider_prev_btn",
+                nextEl: "#social_hub_slider_next_btn",
+              }}
+              spaceBetween={50}
+              speed={1000}
+              // loop={true}
+              className="mySwiper"
+            >
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img1.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img2.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img3.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img4.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img5.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img1.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img1.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img2.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img3.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img4.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img5.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={home.social_hub_slider_sec_pt_70}>
+                <div className={home.social_hub_slider_img}>
+                  <Image
+                    src={"/images/socialhub-img1.png"}
+                    height={353}
+                    width={353}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div className={home.social_hub_slider_btn_sec}>
+            <div
+              href={"/"}
+              className={home.social_hub_slider_btn}
+              id="social_hub_slider_prev_btn"
+            >
+              <div className={home.social_hub_slider_btn_img}>
+                {" "}
+                <Image
+                  src={"/images/btn-arrow1.png"}
+                  height={14}
+                  width={7}
+                  alt=""
+                />
+              </div>{" "}
+            </div>
+            <div
+              href={"/"}
+              className={home.social_hub_slider_btn}
+              id="social_hub_slider_next_btn"
+            >
+              <div className={home.social_hub_slider_btn_img}>
+                {" "}
+                <Image
+                  src={"/images/btn-arrow1.png"}
+                  height={14}
+                  width={7}
+                  alt=""
+                  style={{ transform: "rotate(180deg)" }}
+                />
+              </div>{" "}
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* --------Social Hub page end-------------- */}
     </div>
   );
 };

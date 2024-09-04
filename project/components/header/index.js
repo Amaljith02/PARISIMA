@@ -1,28 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import header from "@/styles/Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 const Index = () => {
+  const [dropdownList, setDropdownList] = useState({
+    0: false,
+    1: false,
+    2: false,
+    3: false,
+  });
+  const dropdownListHandler = (index) => {
+    if (dropdownList[index] === true) {
+      setDropdownList(false);
+    } else {
+      setDropdownList(false);
+      setDropdownList((prev) => ({
+        ...prev,
+        [index]: !prev[index],
+      }));
+    }
+    console.log(dropdownList);
+  };
   return (
     <div className={header.nav_main_body}>
       {/* ----------Navbar Top Start------------ */}
 
       <div className={`${header.nav_top_body} container`}>
         <div className={`${header.nav_top_body_content_sec} `}>
-          <span>
+          <Link href={"/"}>
             {" "}
             <div>
               <Image src={"/images/phone.png"} height={20} width={20} alt="" />
             </div>
             +971 (0)4 586 7200
-          </span>
-          <span>
+          </Link>
+          <Link href={"/"}>
             {" "}
             <div>
               <Image src={"/images/email.png"} height={14} width={17} alt="" />
             </div>
             info@parisima.com{" "}
-          </span>{" "}
+          </Link>{" "}
         </div>
         <div className={`${header.nav_top_body_content_sec} `}>
           <Link href={"/"} className={`${header.nav_top_register_btn} `}>
@@ -53,66 +71,175 @@ const Index = () => {
       {/* ----------Navbar Main Starts------------ */}
 
       <div className={`${header.nav_bottom_body} container`}>
-        <div className={`${header.nav_logo}`}>
+        <Link href={"/"} className={`${header.nav_logo}`}>
           <Image
             src={"/images/parisima-logo.png"}
             height={60}
             width={250}
             alt=""
           />
-        </div>
+        </Link>
         <ul className={`${header.nav_menu_sec}`}>
-          <li>
+          <li className={`${header.nav_dropdown_menu_sec}`}>
             <Link href={"/"}>
               ABOUT US
-              <div className={`${header.nav_menu_down_arrow_icon}`}>
+              <div
+                className={`${header.nav_menu_down_arrow_icon}`}
+                onClick={() => dropdownListHandler(0)}
+              >
                 <Image
                   src={"/images/nav-arrow.png"}
                   height={5}
                   width={10}
                   alt=""
+                  style={
+                    dropdownList[0] && {
+                      transform: "rotate(180deg)",
+                    }
+                  }
                 />
               </div>
             </Link>
+            {dropdownList[0] && (
+              <ul className={`${header.nav_dropdown_menu_list}`}>
+                <li>
+                  <Link href={"/"}>HOW WE ARE </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>LOCATIONS</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>WHY PARISIMA </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>LEADERSHIP </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>KEY FACT </Link>
+                </li>
+              </ul>
+            )}
           </li>
-          <li>
+          <li className={`${header.nav_dropdown_menu_sec}`}>
             <Link href={"/"}>
               OUR SERVICES
-              <div className={`${header.nav_menu_down_arrow_icon}`}>
+              <div
+                className={`${header.nav_menu_down_arrow_icon}`}
+                onClick={() => dropdownListHandler(1)}
+              >
                 <Image
                   src={"/images/nav-arrow.png"}
                   height={5}
                   width={10}
                   alt=""
+                  style={
+                    dropdownList[1] && {
+                      transform: "rotate(180deg)",
+                    }
+                  }
                 />
               </div>
             </Link>
+            {dropdownList[1] && (
+              <ul className={`${header.nav_dropdown_menu_list}`}>
+                <li>
+                  <Link href={"/"}>HOW WE ARE </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>LOCATIONS</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>WHY PARISIMA </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>LEADERSHIP </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>KEY FACT </Link>
+                </li>
+              </ul>
+            )}
           </li>
-          <li>
+          <li className={`${header.nav_dropdown_menu_sec}`}>
             <Link href={"/"}>
               FOR CANDIDATES
-              <div className={`${header.nav_menu_down_arrow_icon}`}>
+              <div
+                className={`${header.nav_menu_down_arrow_icon}`}
+                onClick={() => dropdownListHandler(2)}
+              >
                 <Image
                   src={"/images/nav-arrow.png"}
                   height={5}
                   width={10}
                   alt=""
+                  style={
+                    dropdownList[2] && {
+                      transform: "rotate(180deg)",
+                    }
+                  }
                 />
               </div>
             </Link>
+            {dropdownList[2] && (
+              <ul className={`${header.nav_dropdown_menu_list}`}>
+                <li>
+                  <Link href={"/"}>HOW WE ARE </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>LOCATIONS</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>WHY PARISIMA </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>LEADERSHIP </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>KEY FACT </Link>
+                </li>
+              </ul>
+            )}
           </li>
-          <li>
+          <li className={`${header.nav_dropdown_menu_sec}`}>
             <Link href={"/"}>
               OUR EXPERTISE
-              <div className={`${header.nav_menu_down_arrow_icon}`}>
+              <div
+                className={`${header.nav_menu_down_arrow_icon}`}
+                onClick={() => dropdownListHandler(3)}
+              >
                 <Image
                   src={"/images/nav-arrow.png"}
                   height={5}
                   width={10}
                   alt=""
+                  style={
+                    dropdownList[3] && {
+                      transform: "rotate(180deg)",
+                    }
+                  }
                 />
               </div>
             </Link>
+
+            {dropdownList[3] && (
+              <ul className={`${header.nav_dropdown_menu_list}`}>
+                <li>
+                  <Link href={"/"}>HOW WE ARE </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>LOCATIONS</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>WHY PARISIMA </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>LEADERSHIP </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>KEY FACT </Link>
+                </li>
+              </ul>
+            )}
           </li>
           <li>
             <Link href={"/"}>INSIGHTS</Link>
