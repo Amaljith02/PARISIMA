@@ -27,14 +27,14 @@ const Index = () => {
 
       <div className={`${header.nav_top_body} container`}>
         <div className={`${header.nav_top_body_content_sec} `}>
-          <Link href={"/"}>
+          <Link href={"/"} className={`${header.nav_top_link} `}>
             {" "}
             <div>
               <Image src={"/images/phone.png"} height={20} width={20} alt="" />
             </div>
             +971 (0)4 586 7200
           </Link>
-          <Link href={"/"}>
+          <Link href={"/"} className={`${header.nav_top_link} `}>
             {" "}
             <div>
               <Image src={"/images/email.png"} height={14} width={17} alt="" />
@@ -250,7 +250,7 @@ const Index = () => {
           <li>
             <Link href={"/"}>CONTACT US</Link>
           </li>
-          <li>
+          <li className={header.arabic_left_border}>
             <Link href={"/"}>عربي</Link>
           </li>
         </ul>

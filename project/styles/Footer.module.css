@@ -47,8 +47,8 @@
   list-style: none;
 }
 .footer_list > li > a {
-  font-size: 1rem;
-  /* font-size: 16px; */
+  /* font-size: 1rem; */
+  font-size: 16px;
   font-weight: 400;
   line-height: 19.5px;
   text-align: left;
@@ -66,7 +66,8 @@
 }
 .footer_connect_us_logo_img {
   height: auto;
-  width: 20px;
+  width: 20px ;
+  display: flex;
 }
 .footer_connect_us_logo_img > img {
   display: block;
@@ -80,8 +81,8 @@
   justify-content: center;
 }
 .footer_bottom_container > h4 {
-  /* font-size: 15px; */
-  font-size: 0.93rem;
+  font-size: 15px;
+  /* font-size: 0.93rem; */
   font-weight: 400;
   line-height: 18.29px;
   text-align: center;

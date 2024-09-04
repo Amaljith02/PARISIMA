@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import home from "@/styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,12 +14,19 @@ import "swiper/css/pagination";
 
 // import required modules
 import {
+  Autoplay,
   EffectCards,
   EffectFade,
   Navigation,
   Pagination,
 } from "swiper/modules";
 const index = () => {
+  useEffect(() => {
+    AOS.init({
+      delay: 500,
+      duration: 1200,
+    });
+  }, []);
   return (
     <div>
       {/* --------GCC EXpansion Page Start-------------- */}
@@ -27,10 +36,14 @@ const index = () => {
           pagination={{
             clickable: true,
           }}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
           loop={true}
           speed={5000}
           effect="fade"
-          modules={[Pagination, EffectFade]}
+          modules={[Pagination, EffectFade, Autoplay]}
           className={`mySwiper ${home.gcc_expansion_swiper_page} container `}
         >
           <SwiperSlide>
@@ -62,6 +75,13 @@ const index = () => {
                     <Image
                       src={"/images/p1-btn-arrow.png"}
                       height={16}
+                      width={18}
+                      alt=""
+                    />
+                    <Image
+                      src={"/images/p1-btn-arrow.png"}
+                      height={16}
+                      style={{ filter: "invert(1)" }}
                       width={18}
                       alt=""
                     />
@@ -120,6 +140,13 @@ const index = () => {
                       width={18}
                       alt=""
                     />
+                    <Image
+                      src={"/images/p1-btn-arrow.png"}
+                      height={16}
+                      style={{ filter: "invert(1)" }}
+                      width={18}
+                      alt=""
+                    />
                   </div>
                 </Link>
               </div>
@@ -169,7 +196,10 @@ const index = () => {
         <div className={`${home.build_leading_edge_container_page} container`}>
           <div className={`${home.build_leading_edge_img_text_sec} `}>
             <div className={`${home.build_leading_edge_img_sec} `}>
-              <div className={`${home.build_leading_edge_img_sec_img1} `}>
+              <div
+                className={`${home.build_leading_edge_img_sec_img1} `}
+                data-aos="fade-right"
+              >
                 <Image
                   src={"/images/build-leading-edge-img1.png"}
                   height={560}
@@ -177,7 +207,10 @@ const index = () => {
                   alt=""
                 />
               </div>
-              <div className={`${home.build_leading_edge_img_sec_img2} `}>
+              <div
+                className={`${home.build_leading_edge_img_sec_img2} `}
+                data-aos="fade-up"
+              >
                 <Image
                   src={"/images/build-leading-edge-img2.png"}
                   height={375}
@@ -187,7 +220,7 @@ const index = () => {
               </div>
             </div>
             <div className={`${home.build_leading_edge_text_sec} `}>
-              <h2 className="pt-sans">
+              <h2 className="pt-sans" data-aos="fade-up">
                 WE BUILD LEADING EDGE INFRASTRUCTURE WITHIN YOUR ORGANISATION
               </h2>
               <p>
@@ -221,7 +254,10 @@ const index = () => {
             </div>
           </div>
           <div className={`${home.build_leading_edge_count_sec}  `}>
-            <div className={`${home.build_leading_edge_count_card}  `}>
+            <div
+              className={`${home.build_leading_edge_count_card} `}
+              data-aos="fade-up"
+            >
               <div className={`${home.build_leading_edge_count_card_logo1} `}>
                 <Image
                   src={"/images/countup1.png"}
@@ -235,7 +271,11 @@ const index = () => {
                 <h3>3,500+</h3>
               </span>
             </div>
-            <div className={`${home.build_leading_edge_count_card}  `}>
+            <div
+              className={`${home.build_leading_edge_count_card} `}
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
               <div className={`${home.build_leading_edge_count_card_logo2} `}>
                 <Image
                   src={"/images/countup2.png"}
@@ -249,7 +289,11 @@ const index = () => {
                 <h3>16,000+</h3>
               </span>
             </div>
-            <div className={`${home.build_leading_edge_count_card}  `}>
+            <div
+              className={`${home.build_leading_edge_count_card}  `}
+              data-aos="fade-up"
+              data-aos-delay="1200"
+            >
               <div className={`${home.build_leading_edge_count_card_logo3} `}>
                 <Image
                   src={"/images/countup3.png"}
@@ -271,29 +315,33 @@ const index = () => {
       {/* --------CEO Message page starts-------------- */}
       <div className={home.ceo_message_page}>
         <div className={`${home.ceo_message_page_container} container`}>
-          <div className={`${home.ceo_message_text_content}`}>
-            <h3 className=" pt-sans">CEO MESSAGE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              malesuada lacus sit amet consectetur sollicitudin. Vivamus
-              condimentum at urna at hendrerit. Sed in laoreet ex. Curabitur at
-              mauris ipsum. Praesent scelerisque mi et aliquet commodo. Aliquam
-              ullamcorper ante mattis volutpat vulputate. Morbi tincidunt ante
-              urna, ac congue odio laoreet quis. Nam nibh velit, porta in
-              pharetra et, condimentum eu leo.
-            </p>
-            <h4>
-              Tiago Costa <br />
-              <span>CEO, Parisima</span>
-            </h4>
-          </div>
-          <div className={home.ceo_message_profile}>
-            <Image
-              src={"/images/ceo-message-profile.png"}
-              height={640}
-              width={690}
-              alt=""
-            />
+          <div className={home.ceo_message_sub_page}>
+            <div className={`${home.ceo_message_text_content}`}>
+              <h3 className=" pt-sans" data-aos="fade-left">
+                CEO MESSAGE
+              </h3>
+              <p data-aos="fade-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                malesuada lacus sit amet consectetur sollicitudin. Vivamus
+                condimentum at urna at hendrerit. Sed in laoreet ex. Curabitur
+                at mauris ipsum. Praesent scelerisque mi et aliquet commodo.
+                Aliquam ullamcorper ante mattis volutpat vulputate. Morbi
+                tincidunt ante urna, ac congue odio laoreet quis. Nam nibh
+                velit, porta in pharetra et, condimentum eu leo.
+              </p>
+              <h4 data-aos="fade-left">
+                Tiago Costa <br />
+                <span>CEO, Parisima</span>
+              </h4>
+            </div>
+            <div className={home.ceo_message_profile}>
+              <Image
+                src={"/images/ceo-message-profile.png"}
+                height={640}
+                width={690}
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -333,8 +381,10 @@ const index = () => {
           </div>
 
           <div className={home.how_we_work_text_sec}>
-            <h3 className="pt-sans">HOW WE WORK</h3>
-            <p>
+            <h3 className="pt-sans" data-aos="fade-left">
+              HOW WE WORK
+            </h3>
+            <p data-aos="fade-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               porttitor sollicitudin est. Praesent id nibh mi. Aliquam commodo
               tellus sit amet libero volutpat scelerisque. Quisque eu blandit
@@ -431,8 +481,10 @@ const index = () => {
         <div className={`${home.sectors_main_page_container} container`}>
           <div className={`${home.sectors_head_sec} `}>
             <div className={`${home.sectors_head_text_sec} `}>
-              <h3 className="pt-sans">SECTORS</h3>
-              <p>
+              <h3 className="pt-sans" data-aos="fade-left">
+                SECTORS
+              </h3>
+              <p data-aos="fade-left" data-aos-delay="600">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the 1500s.
@@ -455,7 +507,11 @@ const index = () => {
           </div>
 
           <div className={`${home.sectors_card_sec} `}>
-            <div className={`${home.sectors_card} `}>
+            <div
+              className={`${home.sectors_card} `}
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
               <div className={`${home.sectors_card_img_background_sec} `}>
                 <div className={`${home.sectors_card_img_background} `}>
                   <Image
@@ -493,7 +549,11 @@ const index = () => {
                 </div>
               </Link>
             </div>
-            <div className={`${home.sectors_card} `}>
+            <div
+              className={`${home.sectors_card} `}
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
               <div className={`${home.sectors_card_img_background_sec} `}>
                 <div className={`${home.sectors_card_img_background} `}>
                   <Image
@@ -531,7 +591,11 @@ const index = () => {
                 </div>
               </Link>
             </div>
-            <div className={`${home.sectors_card} `}>
+            <div
+              className={`${home.sectors_card} `}
+              data-aos="fade-up"
+              data-aos-delay="1200"
+            >
               <div className={`${home.sectors_card_img_background_sec} `}>
                 <div className={`${home.sectors_card_img_background} `}>
                   <Image
@@ -569,7 +633,11 @@ const index = () => {
                 </div>
               </Link>
             </div>
-            <div className={`${home.sectors_card} `}>
+            <div
+              className={`${home.sectors_card} `}
+              data-aos="fade-up"
+              data-aos-delay="1500"
+            >
               <div className={`${home.sectors_card_img_background_sec} `}>
                 <div className={`${home.sectors_card_img_background} `}>
                   <Image
@@ -671,11 +739,19 @@ const index = () => {
         <div
           className={`${home.parisima_talent_main_page_container} container`}
         >
-          <div className={`${home.parisima_talent_page_text_sec} pt-sans`}>
+          <div
+            className={`${home.parisima_talent_page_text_sec} pt-sans`}
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             PARISIMA TALENT CONTINUES GCC EXPANSION WITH NEW OFFICE IN KSA
           </div>
 
-          <div className={home.parisima_talent_background_image}>
+          <div
+            className={home.parisima_talent_background_image}
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             {" "}
             <Image
               src={"/images/parisima-talent-img.png"}
@@ -699,10 +775,10 @@ const index = () => {
 
           <div className={home.what_our_clients_say_page_content_container}>
             <div className={home.what_our_clients_say_page_text_sec}>
-              <h3 className="pt-sans">
+              <h3 className="pt-sans" data-aos="fade-up">
                 WHAT OUR CLIENTS SAY <br /> ABOUT US
               </h3>
-              <p>
+              <p data-aos="fade-up">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 sagittis nunc sit amet nisl blandit, nec aliquam nisi eleifend.
                 Proin vel odio eu sem placerat lacinia ut non nisi. Nam maximus
@@ -710,7 +786,11 @@ const index = () => {
                 nibh eget lectus suscipit iaculis.
               </p>
               <div className={home.what_our_clients_say_page_profile_sec}>
-                <div className={home.what_our_clients_say_page_profile_photo}>
+                <div
+                  className={home.what_our_clients_say_page_profile_photo}
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <Image
                     src={"/images/profile-lady1.png"}
                     height={75}
@@ -718,7 +798,11 @@ const index = () => {
                     alt=""
                   />
                 </div>
-                <div className={home.what_our_clients_say_page_profile_photo}>
+                <div
+                  className={home.what_our_clients_say_page_profile_photo}
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
                   <Image
                     src={"/images/profile-lady2.png"}
                     height={75}
@@ -726,7 +810,11 @@ const index = () => {
                     alt=""
                   />
                 </div>
-                <div className={home.what_our_clients_say_page_profile_photo}>
+                <div
+                  className={home.what_our_clients_say_page_profile_photo}
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
                   <Image
                     src={"/images/profile-lady3.png"}
                     height={75}
@@ -734,7 +822,12 @@ const index = () => {
                     alt=""
                   />
                 </div>
-                <div className={home.what_our_clients_say_page_profile_photo}>
+                <div
+                  className={home.what_our_clients_say_page_profile_photo}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="800"
+                >
                   <Image
                     src={"/images/profile-lady4.png"}
                     height={75}
@@ -745,6 +838,7 @@ const index = () => {
               </div>
               <div
                 className={`${home.what_our_clients_say_page_rating_sec} pt-sans`}
+                data-aos="fade-left"
               >
                 <div
                   className={`${home.what_our_clients_say_page_rating_icon} `}
@@ -1118,8 +1212,8 @@ const index = () => {
         </div>
       </div>
       {/* --------What Our Clients Say page ends-------------- */}
-      {/* --------Insights page Start-------------- */}
 
+      {/* --------Insights page Start-------------- */}
       <div className={home.insights_page}>
         <div className={`${home.insights_page_container} container`}>
           <h3 className={`${home.insights_page_title} pt-sans`}>INSIGHTS</h3>
@@ -1133,6 +1227,7 @@ const index = () => {
               style={{
                 background: `url(/images/insights-card1-back.png) no-repeat center/cover `,
               }}
+              data-aos="fade-right"
             >
               <span>12 July, 2022</span>
               <h3 className="pt-sans">
@@ -1140,7 +1235,7 @@ const index = () => {
               </h3>{" "}
             </div>
 
-            <div className={home.insights_page_card2}>
+            <div className={home.insights_page_card2} data-aos="fade-up">
               <div className={home.insights_page_card2_img}>
                 <Image
                   src={"/images/insights-card2-img.png"}
@@ -1169,6 +1264,7 @@ const index = () => {
               style={{
                 background: `url(/images/insights-card4-back.png) no-repeat center/cover `,
               }}
+              data-aos="fade-up"
             >
               <span>09 September, 2019</span>
               <h3 className="pt-sans">
@@ -1177,7 +1273,7 @@ const index = () => {
               </h3>{" "}
             </div>
 
-            <div className={home.insights_page_card2}>
+            <div className={home.insights_page_card2} data-aos="fade-right">
               <div className={home.insights_page_card2_img}>
                 <Image
                   src={"/images/insights-card3-img.png"}
@@ -1213,8 +1309,8 @@ const index = () => {
           </Link>
         </div>
       </div>
-
       {/* --------Insights page ends-------------- */}
+
       {/* --------Learn more about the group page Start-------------- */}
       <div className={home.learn_more_about_the_group_page}>
         <div
@@ -1228,7 +1324,11 @@ const index = () => {
           </p>{" "}
           <div className={home.learn_more_about_the_group_page_card_sec}>
             <div className={home.learn_more_about_the_group_page_card}>
-              <div className={home.learn_more_about_the_group_page_card_img}>
+              <div
+                className={home.learn_more_about_the_group_page_card_img}
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <Image
                   src={"/images/learn-more-logo1.png"}
                   height={38}
@@ -1238,7 +1338,11 @@ const index = () => {
               </div>
             </div>
             <div className={home.learn_more_about_the_group_page_card}>
-              <div className={home.learn_more_about_the_group_page_card_img}>
+              <div
+                className={home.learn_more_about_the_group_page_card_img}
+                data-aos="fade-up"
+                data-aos-delay="800"
+              >
                 <Image
                   src={"/images/learn-more-logo2.png"}
                   height={67}
@@ -1248,7 +1352,11 @@ const index = () => {
               </div>
             </div>
             <div className={home.learn_more_about_the_group_page_card}>
-              <div className={home.learn_more_about_the_group_page_card_img}>
+              <div
+                className={home.learn_more_about_the_group_page_card_img}
+                data-aos="fade-up"
+                data-aos-delay="1200"
+              >
                 <Image
                   src={"/images/learn-more-logo3.png"}
                   height={65}
@@ -1258,7 +1366,11 @@ const index = () => {
               </div>
             </div>
             <div className={home.learn_more_about_the_group_page_card}>
-              <div className={home.learn_more_about_the_group_page_card_img}>
+              <div
+                className={home.learn_more_about_the_group_page_card_img}
+                data-aos="fade-up"
+                data-aos-delay="1600"
+              >
                 <Image
                   src={"/images/learn-more-logo4.png"}
                   height={51}

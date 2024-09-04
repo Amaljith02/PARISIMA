@@ -5,8 +5,12 @@
   padding: 0;
   scrollbar-width: none;
 }
-body {
+html {
   font-size: 100%;
+  /* line-height: 100% !important; */
+}
+body {
+  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
 .pt-sans {
@@ -85,11 +89,17 @@ p {
   height: auto;
   width: 18px;
   padding-left: 7px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
+  transition: all 0.3s ease;
 }
 .button_right_arrow_img > img {
   height: auto;
   width: 100%;
   object-fit: cover;
+  transition: all 0.3s ease;
   display: block;
 }
 
@@ -98,5 +108,16 @@ p {
     box-sizing: border-box;
     padding-left: 5%;
     padding-right: 5%;
+    width: 100%;
+  }
+  .swiper-vertical > .swiper-pagination-bullets,
+  .swiper-pagination-vertical.swiper-pagination-bullets {
+    right: var(--swiper-pagination-right, 5%) !important;
+  }
+}
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 90%;
+    /* line-height: 100% !important; */
   }
 }

@@ -22,19 +22,18 @@
   align-items: center;
   gap: 30px;
 }
-.nav_top_register_btn,
-.nav_top_body_content_sec > a {
+.nav_top_link {
   display: flex;
   align-items: center;
   gap: 10px;
-  /* font-size: 14px; */
+  /* font-size: 0.87rem; */
+  font-size: 14px;
   color: white;
-  font-size: 0.87rem;
   font-weight: 400;
   /* background-color: red; */
   transition: all 0.2s ease-in-out;
 }
-.nav_top_body_content_sec > a:hover {
+.nav_top_link:hover {
   color: cyan;
 }
 .nav_top_register_btn {
@@ -42,6 +41,8 @@
   align-items: center;
   color: white;
   padding: 11px 13px;
+  font-size: 14px;
+  /* font-size: 0.87rem; */
   gap: 10px;
   border-radius: 10px;
   backdrop-filter: blur(10px);
@@ -49,7 +50,9 @@
   border: 1px solid rgba(255, 255, 255, 0.384);
 }
 .nav_top_register_btn:hover {
-  background-color: rgba(255, 255, 255, 0.116);
+  color: white;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.056);
 }
 .nav_top_register_btn > span {
   height: auto;
@@ -94,19 +97,23 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  /* font-size: 16px; */
-  font-size: 1rem;
+  font-size: 16px;
+  /* font-size: 1rem; */
   font-weight: 400;
 }
 .nav_menu_sec > li > a:hover {
   color: cyan;
 }
+.arabic_left_border {
+  padding-left: 30px;
+  border-left: 1px solid white;
+}
 .nav_menu_down_arrow_icon {
   height: auto;
-  width: 10px;
+  width: 11px;
 }
 .nav_menu_down_arrow_icon > img {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   object-fit: cover;
   display: block;
   height: auto;
@@ -122,8 +129,8 @@
   background: linear-gradient(180deg, #ffffff66, hsla(0, 0%, 100%, 0.1));
   backdrop-filter: blur(30px);
   border-radius: 20px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -131,7 +138,7 @@
   position: absolute;
   top: 70px;
   opacity: 1;
-  animation: navbar_dropdown_list 0.3s ease;
+  animation: navbar_dropdown_list 0.5s ease;
 }
 @keyframes navbar_dropdown_list {
   from {
@@ -158,5 +165,7 @@
 }
 .nav_dropdown_menu_list > li > a {
   color: white;
-  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  /* font-size: 0.95rem; */
+  font-size: 15px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
 }
