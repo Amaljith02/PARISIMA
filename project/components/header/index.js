@@ -29,14 +29,14 @@ const Index = () => {
         <div className={`${header.nav_top_body_content_sec} `}>
           <Link href={"/"} className={`${header.nav_top_link} `}>
             {" "}
-            <div>
+            <div className={`${header.nav_top_link_icon} `}>
               <Image src={"/images/phone.png"} height={20} width={20} alt="" />
             </div>
             +971 (0)4 586 7200
           </Link>
           <Link href={"/"} className={`${header.nav_top_link} `}>
             {" "}
-            <div>
+            <div className={`${header.nav_top_link_icon} `}>
               <Image src={"/images/email.png"} height={14} width={17} alt="" />
             </div>
             info@parisima.com{" "}
@@ -149,7 +149,7 @@ const Index = () => {
                   <Link href={"/"}>LOCATIONS</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>WHY PARISIMA </Link>
+                  <Link href={"/"}>WHY PARISIMA PARISIMA </Link>
                 </li>
                 <li>
                   <Link href={"/"}>LEADERSHIP </Link>

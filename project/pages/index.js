@@ -20,7 +20,7 @@ import {
   Navigation,
   Pagination,
 } from "swiper/modules";
-const index = () => {
+const Index = () => {
   useEffect(() => {
     AOS.init({
       delay: 500,
@@ -1324,58 +1324,50 @@ const index = () => {
           </p>{" "}
           <div className={home.learn_more_about_the_group_page_card_sec}>
             <div className={home.learn_more_about_the_group_page_card}>
-              <div
-                className={home.learn_more_about_the_group_page_card_img}
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
+              <div className={home.learn_more_about_the_group_page_card_img}>
                 <Image
                   src={"/images/learn-more-logo1.png"}
                   height={38}
                   width={128}
                   alt=""
+                  data-aos="fade-up"
+                  data-aos-delay="400"
                 />
               </div>
             </div>
             <div className={home.learn_more_about_the_group_page_card}>
-              <div
-                className={home.learn_more_about_the_group_page_card_img}
-                data-aos="fade-up"
-                data-aos-delay="800"
-              >
+              <div className={home.learn_more_about_the_group_page_card_img}>
                 <Image
                   src={"/images/learn-more-logo2.png"}
                   height={67}
                   width={100}
                   alt=""
+                  data-aos="fade-up"
+                  data-aos-delay="800"
                 />
               </div>
             </div>
             <div className={home.learn_more_about_the_group_page_card}>
-              <div
-                className={home.learn_more_about_the_group_page_card_img}
-                data-aos="fade-up"
-                data-aos-delay="1200"
-              >
+              <div className={home.learn_more_about_the_group_page_card_img}>
                 <Image
                   src={"/images/learn-more-logo3.png"}
                   height={65}
                   width={177}
                   alt=""
+                  data-aos="fade-up"
+                  data-aos-delay="1200"
                 />
               </div>
             </div>
             <div className={home.learn_more_about_the_group_page_card}>
-              <div
-                className={home.learn_more_about_the_group_page_card_img}
-                data-aos="fade-up"
-                data-aos-delay="1600"
-              >
+              <div className={home.learn_more_about_the_group_page_card_img}>
                 <Image
                   src={"/images/learn-more-logo4.png"}
                   height={51}
                   width={133}
                   alt=""
+                  data-aos="fade-up"
+                  data-aos-delay="1600"
                 />
               </div>
             </div>
@@ -1393,7 +1385,12 @@ const index = () => {
             <Swiper
               pagination={false}
               modules={[Pagination, Navigation]}
-              slidesPerView={5}
+              slidesPerView={4}
+              breakpoints={{
+                1450: {
+                  slidesPerView: 5,
+                },
+              }}
               navigation={{
                 prevEl: "#social_hub_slider_prev_btn",
                 nextEl: "#social_hub_slider_next_btn",
@@ -1566,4 +1563,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

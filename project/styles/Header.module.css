@@ -36,6 +36,16 @@
 .nav_top_link:hover {
   color: cyan;
 }
+.nav_top_link_icon {
+  height: auto;
+  width: 17px;
+}
+.nav_top_link_icon > img {
+  height: auto;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
 .nav_top_register_btn {
   display: flex;
   align-items: center;
@@ -123,7 +133,7 @@
   position: relative;
 }
 .nav_dropdown_menu_list {
-  width: 250px;
+  /* width: 250px; */
   box-sizing: border-box;
   /* background-color: rgb(180, 255, 255); */
   background: linear-gradient(180deg, #ffffff66, hsla(0, 0%, 100%, 0.1));
@@ -161,11 +171,107 @@
   border-bottom: 15px solid transparent;
 }
 .nav_dropdown_menu_list > li {
-  padding: 10px 40px;
+  padding: 10px 60px 10px 40px;
+  display: flex;
 }
 .nav_dropdown_menu_list > li > a {
   color: white;
+  text-wrap: nowrap;
   /* font-size: 0.95rem; */
   font-size: 15px;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
+}
+@media screen and (max-width: 1600px) {
+  .nav_top_register_btn {
+    padding: 9px 13px;
+    font-size: 13px;
+    /* font-size: 0.87rem; */
+    gap: 10px;
+  }
+  .nav_logo {
+    height: auto;
+    width: 210px;
+  }
+  .nav_menu_sec > li > a {
+    gap: 10px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .nav_logo {
+    height: auto;
+    width: 200px;
+  }
+  .nav_menu_sec > li > a {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .nav_dropdown_menu_list {
+    border-radius: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .nav_dropdown_menu_list > li {
+    padding: 10px 40px 10px 30px;
+  }
+  .nav_dropdown_menu_list > li > a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .nav_logo {
+    width: 180px;
+  }
+  .nav_dropdown_menu_list {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    top: 60px;
+  }
+  .nav_dropdown_menu_list::before {
+    border-top: 10px solid #ffffff66;
+    border-left: 10px solid #ffffff66;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: -10px;
+  }
+  .nav_dropdown_menu_list > li > a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .nav_menu_sec > li > a {
+    gap: 7px;
+    letter-spacing: 0.05rem;
+    font-size: 13px;
+  }
+  .nav_logo {
+    width: 170px;
+  }
+  .nav_bottom_body {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .nav_top_body_content_sec {
+    gap: 25px;
+  }
+  .nav_top_link {
+    gap: 7px;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.02rem;
+  }
+  .nav_top_register_btn > span {
+    width: 15px;
+  }
+  .nav_top_register_btn {
+    padding: 8px 11px;
+    font-size: 12px;
+    border-radius: 7px;
+    gap: 8px;
+    letter-spacing: 0.01rem;
+}
 }

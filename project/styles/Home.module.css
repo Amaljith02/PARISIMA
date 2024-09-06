@@ -53,7 +53,8 @@
   font-size: 15px;
   /* font-size: 0.93rem; */
   font-weight: 500;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
   text-align: left;
   /* background-color: rgb(255, 94, 0); */
   color: white;
@@ -70,7 +71,9 @@
   font-size: 15px;
   /* font-size: 0.93rem; */
   font-weight: 700;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
+
   letter-spacing: 0.06em;
   transition: all 0.3s ease-in-out;
 }
@@ -184,6 +187,7 @@
 }
 .build_leading_edge_img_sec {
   position: relative;
+  width: 55%;
 }
 .build_leading_edge_img_sec_img1,
 .build_leading_edge_img_sec_img2 {
@@ -192,7 +196,7 @@
 }
 .build_leading_edge_img_sec_img1 {
   padding-bottom: 150px;
-  padding-right: 200px;
+  /* padding-right: 200px; */
 }
 .build_leading_edge_img_sec_img2 {
   position: absolute;
@@ -216,7 +220,8 @@
   /* font-size: 45px; */
   font-size: 2.81rem;
   font-weight: 700;
-  line-height: 55px;
+  /* line-height: 55px; */
+  line-height: 3.43rem;
   padding-bottom: 30px;
   /* background-color: #55b5ff; */
 }
@@ -226,14 +231,17 @@
   /* font-size: 0.93rem; */
   font-weight: 500;
   padding-bottom: 30px;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
   color: white;
 }
 .build_leading_edge_text_btn {
   font-size: 15px;
   /* font-size: 0.93rem; */
   font-weight: 700;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
+
   letter-spacing: 0.06em;
   display: inline-flex;
   align-items: center;
@@ -304,7 +312,9 @@
   /* font-size: 20px; */
   font-size: 1.25rem;
   font-weight: 700;
-  line-height: 25.88px;
+  /* line-height: 25.88px; */
+  line-height: 1.61rem;
+
   color: white;
   font-family: "PT Sans", sans-serif;
 }
@@ -313,7 +323,8 @@
   /* font-size: 65px; */
   font-size: 4.06rem;
   font-weight: 700;
-  line-height: 84.11px;
+  /* line-height: 84.11px; */
+  line-height: 5.25rem;
   text-align: left;
 }
 /* --------We Build Leading Edge page Ends-------------- */
@@ -348,7 +359,8 @@
   /* font-size: 45px; */
   font-size: 2.81rem;
   font-weight: 700;
-  line-height: 55px;
+  /* line-height: 55px; */
+  line-height: 3.43rem;
   padding-bottom: 30px;
 }
 .ceo_message_text_content > p {
@@ -356,20 +368,23 @@
   /* font-size: 1.25rem; */
 
   font-weight: 300;
-  line-height: 40px;
+  /* line-height: 40px; */
+  line-height: 2.5rem;
   padding-bottom: 40px;
 }
 .ceo_message_text_content > h4 {
   font-size: 25px;
   /* font-size: 1.56rem; */
   font-weight: 500;
-  line-height: 40px;
+  /* line-height: 40px; */
+  line-height: 2.5rem;
 }
 .ceo_message_text_content > h4 > span {
   font-size: 16px;
   /* font-size: 1rem; */
   font-weight: 500;
-  line-height: 40px;
+  /* line-height: 40px; */
+  line-height: 2.5rem;
 }
 .ceo_message_profile {
   height: auto;
@@ -440,7 +455,8 @@
 
   /* font-size: 45px; */
   font-weight: 700;
-  line-height: 55px;
+  /* line-height: 55px; */
+  line-height: 3.43rem;
   text-align: left;
 }
 .how_we_work_text_sec > p {
@@ -448,7 +464,8 @@
   /* font-size: 0.93rem; */
   padding-bottom: 30px;
   font-weight: 500;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
 }
 .how_we_work_text_btn {
   border-radius: 10px;
@@ -456,7 +473,9 @@
   /* font-size: 0.93rem; */
 
   font-weight: 700;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
+
   letter-spacing: 0.06em;
   background-color: #00b4b5;
   display: inline-flex;
@@ -484,7 +503,7 @@
 }
 .how_we_work_swiper_card_img > img {
   display: block;
-  /* height: auto; */
+  height: auto;
   width: 100%;
   object-fit: cover;
 }
@@ -492,7 +511,8 @@
   /* font-size: 30px; */
   font-size: 1.87rem;
   font-weight: 700;
-  line-height: 38.82px;
+  /* line-height: 38.82px; */
+  line-height: 2.42rem;
 }
 /* --------how we work page ends-------------- */
 /* --------Sectors page Start-------------- */
@@ -506,7 +526,6 @@
   padding-bottom: 100px;
 }
 .sectors_head_sec {
-  height: 150px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -524,21 +543,25 @@
   font-size: 2.81rem;
   padding-bottom: 30px;
   font-weight: 700;
-  line-height: 55px;
+  /* line-height: 55px; */
+  line-height: 3.43rem;
 }
 .sectors_head_text_sec > p {
   font-size: 15px;
   /* font-size: 0.93rem; */
 
   font-weight: 500;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
 }
 .sectors_head_view_all_btn {
   font-size: 15px;
   /* font-size: 0.93rem; */
 
   font-weight: 700;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
+
   letter-spacing: 0.06em;
   text-align: left;
   background-color: white;
@@ -556,10 +579,9 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .sectors_card {
-  height: 500px;
   width: 20%;
   /* background-color: red; */
   display: flex;
@@ -575,7 +597,7 @@
   position: relative;
 }
 .sectors_card_img_background {
-  height: 155px;
+  height: auto;
   width: 161px;
 }
 .sectors_card_img_background > img {
@@ -589,7 +611,7 @@
   width: 90px;
   margin: auto;
   position: absolute;
-  bottom: 5px;
+  bottom: 15px;
 }
 .sectors_card_img_logo > img {
   display: block;
@@ -601,9 +623,10 @@
   /* font-size: 30px; */
   font-size: 1.87rem;
   font-weight: 700;
-  line-height: 55px;
+  /* line-height: 55px; */
+  line-height: 3.43rem;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 35px;
 }
 .sectors_card > p {
   font-size: 15px;
@@ -611,15 +634,19 @@
   padding-top: 10px;
   padding-bottom: 30px;
   font-weight: 500;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
+
   text-align: center;
 }
 .sectors_card_btn {
-  /* font-size: 15px; */
-  font-size: 0.93rem;
+  font-size: 15px;
+  /* font-size: 0.93rem; */
   padding: 12px 29px;
   font-weight: 700;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
+
   letter-spacing: 0.06em;
   display: flex;
   color: black;
@@ -632,10 +659,6 @@
   background-color: #00f1e1;
 }
 /* --------Sectors page ends-------------- */
-
-
-
-
 
 /* --------opportunities page start-------------- */
 .opportunities_main_page {
@@ -660,7 +683,8 @@
   /* font-size: 45px; */
   font-size: 2.81rem;
   font-weight: 700;
-  line-height: 55px;
+  /* line-height: 55px; */
+  line-height: 3.43rem;
   text-align: center;
 }
 
@@ -670,20 +694,23 @@
   width: 100%;
   max-width: 660px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 1.62rem;
+  /* line-height: 26px; */
   text-align: center;
   padding-top: 15px;
   padding-bottom: 30px;
 }
 .opportunities_text_sec_btn {
-  /* font-size: 15px; */
-  font-size: 0.93rem;
+  font-size: 15px;
+  /* font-size: 0.93rem; */
   display: flex;
   align-items: center;
   color: rgb(255, 255, 255);
   background-color: #00b4b5;
   font-weight: 700;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
+
   border-radius: 10px;
   padding: 12px 20px;
   transition: all 0.3s ease;
@@ -698,12 +725,13 @@
   max-width: 700px;
   width: 100%;
 }
-.opportunities_map_image {
+.opportunities_map_img {
   height: auto;
   /* width: 730px; */
   width: 100%;
+  margin: auto;
 }
-.opportunities_map_image > img {
+.opportunities_map_img > img {
   display: block;
   object-fit: cover;
   height: auto;
@@ -718,7 +746,6 @@
 .opportunities_map_btn {
   background-color: #00b4b5;
   color: white;
-  padding: 10px 13px;
   border-radius: 10px;
   margin: 0 15px;
   /* font-size: 18px; */
@@ -726,7 +753,8 @@
   padding: 13px 35px;
   font-weight: 600;
   transition: all 0.3s ease;
-  line-height: 27px;
+  line-height: 1.68rem;
+  /* line-height: 27px; */
 }
 .opportunities_map_btn:hover {
   background-color: #00645e;
@@ -763,7 +791,8 @@
   font-size: 2.81rem;
   z-index: 5;
   font-weight: 700;
-  line-height: 58.23px;
+  /* line-height: 58.23px; */
+  line-height: 3.63rem;
 }
 .parisima_talent_background_image {
   height: auto;
@@ -794,7 +823,8 @@
   /* font-size: 45px; */
   font-size: 2.81rem;
   font-weight: 700;
-  line-height: 55px;
+  line-height: 3.43rem;
+  /* line-height: 55px; */
   text-align: center;
 }
 .what_our_clients_say_page_content_container {
@@ -811,7 +841,9 @@
   /* font-size: 45px; */
   font-size: 2.81rem;
   font-weight: 700;
-  line-height: 55px;
+  /* line-height: 55px; */
+  line-height: 3.43rem;
+
   padding-top: 30px;
 }
 .what_our_clients_say_page_text_sec > p {
@@ -819,7 +851,8 @@
   /* font-size: 0.93rem; */
   padding-top: 30px;
   font-weight: 500;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
 }
 .what_our_clients_say_page_profile_sec {
   display: flex;
@@ -849,7 +882,8 @@
   color: #818181;
   gap: 5px;
   font-weight: 400;
-  line-height: 23.29px;
+  line-height: 1.45rem;
+  /* line-height: 23.29px; */
 }
 .what_our_clients_say_page_rating_icon {
   height: auto;
@@ -989,7 +1023,8 @@
   font-size: 17px;
   /* font-size: 1.06rem; */
   font-weight: 500;
-  line-height: 30px;
+  /* line-height: 30px; */
+  line-height: 1.87rem;
   padding: 20px 0;
 }
 .what_our_clients_say_page_slide_card_rating_sec {
@@ -1013,7 +1048,8 @@
   font-size: 1.25rem;
   padding-top: 15px;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 2rem;
+  /* line-height: 32px; */
   text-align: left;
 }
 /* --------What Our Clients Say page ends-------------- */
@@ -1036,7 +1072,8 @@
   /* font-size: 45px; */
   font-size: 2.81rem;
   font-weight: 700;
-  line-height: 55px;
+  line-height: 3.43rem;
+  /* line-height: 55px; */
   padding-bottom: 10px;
   text-align: center;
 }
@@ -1044,7 +1081,8 @@
   font-size: 15px;
   /* font-size: 0.93rem; */
   font-weight: 500;
-  line-height: 26px;
+  line-height: 1.62rem;
+  /* line-height: 26px; */
   text-align: center;
   padding-bottom: 60px;
 }
@@ -1076,14 +1114,16 @@
   /* font-size: 0.93rem; */
 
   font-weight: 500;
-  line-height: 18.29px;
+  line-height: 1.14rem;
+  /* line-height: 18.29px; */
 }
 .insights_page_card1 > h3 {
   padding-top: 25px;
   /* font-size: 29px; */
   font-size: 1.81rem;
   font-weight: 700;
-  line-height: 37.53px;
+  line-height: 2.34rem;
+  /* line-height: 37.53px; */
 }
 .insights_page_card2 {
   height: auto;
@@ -1105,7 +1145,8 @@
   padding-top: 40px;
   font-weight: 500;
   display: inline-block;
-  line-height: 18.29px;
+  line-height: 1.14rem;
+  /* line-height: 18.29px; */
 }
 .insights_page_card2 > h3 {
   /* font-size: 29px; */
@@ -1113,14 +1154,16 @@
   padding-top: 10px;
 
   font-weight: 700;
-  line-height: 37.53px;
+  line-height: 2.34rem;
+  /* line-height: 37.53px; */
 }
 .insights_page_card2 > p {
   font-size: 15px;
   /* font-size: 0.93rem; */
   padding-top: 10px;
   font-weight: 500;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
 }
 
 .insights_page_btn {
@@ -1134,7 +1177,9 @@
   background-color: #00b4b5;
   color: white;
   font-weight: 700;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
+
   letter-spacing: 0.06em;
   transition: all 0.3s ease;
 }
@@ -1160,7 +1205,8 @@
   font-size: 2.81rem;
   /* font-size: 45px; */
   font-weight: 700;
-  line-height: 55px;
+  /* line-height: 55px; */
+  line-height: 3.43rem;
 }
 .learn_more_about_the_group_page_container > p {
   font-size: 15px;
@@ -1170,7 +1216,8 @@
   width: 100%;
   text-align: center;
   font-weight: 500;
-  line-height: 26px;
+  /* line-height: 26px; */
+  line-height: 1.62rem;
 }
 .learn_more_about_the_group_page_card_sec {
   width: 100%;
@@ -1187,7 +1234,7 @@
   justify-content: center;
   border: 1px solid rgb(233, 233, 233);
   border-radius: 10px;
-  padding: 51px 0;
+  padding: 30px 0;
   position: relative;
   overflow: hidden;
 }
@@ -1198,17 +1245,29 @@
   width: 20%;
   left: 0;
   top: 0;
+  z-index: 5;
   transform: rotate(25deg);
   background-image: linear-gradient(
     to left,
     transparent,
     rgba(255, 255, 255, 0.726),
-    transparent
+    /* rgba(255, 17, 17, 0.726), */ transparent
   );
   transition: all 0.5s ease;
 }
 .learn_more_about_the_group_page_card:hover.learn_more_about_the_group_page_card::before {
   left: 100%;
+}
+.learn_more_about_the_group_page_card_img {
+  width: 70%;
+  height: auto;
+}
+.learn_more_about_the_group_page_card_img > img {
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  height: auto;
+  width: 85%;
 }
 
 /* --------Learn more about the group page ends-------------- */
@@ -1227,7 +1286,8 @@
   font-size: 2.81rem;
 
   font-weight: 700;
-  line-height: 55px;
+  line-height: 3.43rem;
+  /* line-height: 55px; */
   text-align: center;
 }
 .social_hub_slider_sec {
@@ -1287,4 +1347,778 @@
 /* _________________RESPONSIVE AREA____________________ */
 
 @media screen and (max-width: 1600px) {
+  .gcc_expansion_container_page_text_sec > p {
+    font-size: 15px;
+    padding: 20px 0;
+  }
+  .gcc_expansion_container_btn {
+    padding: 10px 25px;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+  }
+  .gcc_expansion_page_scroll_down_sec {
+    height: 145px;
+    width: 145px;
+  }
+  .build_leading_edge_text_sec > h2 {
+    padding-bottom: 20px;
+  }
+  .build_leading_edge_text_sec > p {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  .build_leading_edge_text_btn {
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    padding: 10px 25px;
+  }
+  .build_leading_edge_img_sec_img1,
+  .build_leading_edge_img_sec_img2 {
+    height: auto;
+    width: 600px;
+  }
+  .build_leading_edge_count_card_logo1,
+  .build_leading_edge_count_card_logo2 {
+    height: auto;
+    width: 110px;
+  }
+  .build_leading_edge_count_card_logo3 {
+    width: 90px;
+    object-fit: cover;
+  }
+  .ceo_message_profile {
+    width: 45%;
+  }
+  .ceo_message_text_content {
+    width: 50%;
+    padding: 63px 5%;
+  }
+  .ceo_message_text_content > h3 {
+    padding-bottom: 20px;
+  }
+  .ceo_message_text_content > p {
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+  .how_we_work_main_page_btn {
+    height: 55px;
+    width: 55px;
+  }
+  .how_we_work_text_sec > h3 {
+    padding-bottom: 20px;
+  }
+  .how_we_work_text_sec > p {
+    font-size: 15px;
+    padding-bottom: 25px;
+  }
+  .sectors_card_sec {
+    padding-top: 50px;
+  }
+  .sectors_card_img_background {
+    height: unset;
+    width: 156px;
+  }
+  .sectors_card_img_logo {
+    width: 80px;
+    bottom: 25px;
+  }
+  .sectors_card > h3 {
+    padding-top: 30px;
+  }
+  .sectors_card > p {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .sectors_head_view_all_btn {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+  .sectors_card_btn {
+    font-size: 14px;
+    padding: 10px 25px;
+    letter-spacing: 0.06em;
+  }
+  .opportunities_main_page_container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .opportunities_text_sec > p {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  .opportunities_text_sec_btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .opportunities_map_img {
+    width: 90%;
+  }
+  .opportunities_map_btn_group {
+    padding-top: 40px;
+  }
+  .opportunities_map_btn {
+    padding: 10px 13px;
+    margin: 0 15px;
+    padding: 11px 30px;
+  }
+  .parisima_talent_background_image {
+    width: 75%;
+  }
+  .parisima_talent_page_text_sec {
+    left: 5%;
+    width: 33%;
+  }
+  .parisima_talent_main_page_container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .what_our_clients_say_page_container {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .what_our_clients_say_page_content_container {
+    padding-top: 40px;
+  }
+  .what_our_clients_say_page_text_sec > p {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+  .what_our_clients_say_page_profile_sec {
+    padding-top: 20px;
+  }
+  .what_our_clients_say_page_profile_photo {
+    width: 63px;
+    margin-left: -27px;
+  }
+  .what_our_clients_say_page_slide_prev_btn {
+    left: -2%;
+  }
+  .what_our_clients_say_page_slide_next_btn {
+    right: -2%;
+  }
+  .what_our_clients_say_page_slide_card_profile {
+    top: -40px;
+    width: 90px;
+  }
+  .what_our_clients_say_page_slide_sec {
+    width: 50%;
+    height: 520px;
+  }
+  .what_our_clients_say_page_slide_card {
+    margin-top: 70px;
+    padding: 80px 8% 35px 7%;
+  }
+  .insights_page_container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  .insights_page_card1 {
+    padding-bottom: 4%;
+    padding-left: 4%;
+  }
+  .insights_page_btn {
+    font-size: 14px;
+    margin-top: 70px;
+    padding: 10px 20px;
+  }
+  .insights_page_card2 > span {
+    font-size: 15px;
+    padding-top: 25px;
+  }
+  .learn_more_about_the_group_page_container {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .learn_more_about_the_group_page_container > p {
+    font-size: 15px;
+    padding-top: 15px;
+  }
+  .learn_more_about_the_group_page_card {
+    width: 20%;
+    max-width: 260px;
+    padding: 40px 0;
+  }
+  .social_hub_page_container {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+  .social_hub_slider_sec_pt_70:nth-child(2n + 1) {
+    padding-top: 75px;
+  }
+  .social_hub_slider_btn {
+    height: 55px;
+    width: 55px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .gcc_expansion_container_btn {
+    padding: 10px 19px;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+  }
+  .gcc_expansion_container_page_text_sec {
+    padding-top: 100px;
+  }
+  .gcc_expansion_page_scroll_down_sec {
+    height: 140px;
+    width: 140px;
+  }
+
+  .build_leading_edge_img_sec_img1,
+  .build_leading_edge_img_sec_img2 {
+    height: auto;
+    width: 80%;
+  }
+  .build_leading_edge_img_sec_img1 {
+    padding-bottom: 100px;
+  }
+  .build_leading_edge_text_sec {
+    padding-top: 50px;
+    width: 40%;
+  }
+  .build_leading_edge_img_text_sec {
+    padding-bottom: 65px;
+  }
+  .build_leading_edge_count_card_logo1,
+  .build_leading_edge_count_card_logo2 {
+    height: auto;
+    width: 25%;
+  }
+  .build_leading_edge_count_card {
+    padding: 35px 10px;
+    width: 33%;
+    gap: 20px;
+  }
+  .build_leading_edge_count_card_logo3 {
+    width: 22%;
+  }
+  .ceo_message_text_content > p {
+    font-size: 17px;
+    padding-bottom: 25px;
+  }
+  .ceo_message_text_content > h4 {
+    font-size: 24px;
+    line-height: 2.5rem;
+  }
+  .ceo_message_page {
+    width: 100%;
+    padding-bottom: 70px;
+    margin-top: -170px;
+  }
+  .how_we_work_main_page_btn_sec {
+    gap: 15px;
+    padding-bottom: 40px;
+  }
+  .how_we_work_main_page_btn {
+    height: 45px;
+    width: 45px;
+  }
+  .sectors_main_page_container {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .sectors_head_text_sec > h3 {
+    font-size: 2.81rem;
+    padding-bottom: 20px;
+    line-height: 3.43rem;
+  }
+  .sectors_head_text_sec > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.62rem;
+  }
+  .sectors_head_view_all_btn {
+    font-size: 14px;
+    padding: 9px 20px;
+  }
+  .sectors_card_sec {
+    padding-top: 60px;
+  }
+  .sectors_card_img_background {
+    height: unset;
+    width: 130px;
+  }
+  .sectors_card_img_logo {
+    width: 70px;
+    bottom: 15px;
+  }
+  .sectors_card > h3 {
+    padding-top: 20px;
+  }
+  .sectors_card > p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .opportunities_main_page_container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .opportunities_text_sec > p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 13px;
+    padding-bottom: 20px;
+  }
+  .opportunities_map_img {
+    width: 80%;
+  }
+  .opportunities_map_btn {
+    margin: 0 15px;
+    padding: 10px 25px;
+  }
+  .parisima_talent_main_page_container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .parisima_talent_background_image {
+    width: 70%;
+  }
+  .parisima_talent_page_text_sec {
+    left: 5%;
+    width: 32%;
+  }
+  .what_our_clients_say_page_container {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+  .what_our_clients_say_page_content_container {
+    padding-top: 20px;
+  }
+  .what_our_clients_say_page_slide_next_btn {
+    right: -4%;
+  }
+  .what_our_clients_say_page_slide_prev_btn {
+    left: -4%;
+  }
+  .what_our_clients_say_page_slide_card > p {
+    font-size: 16px;
+    line-height: 1.87rem;
+    padding: 20px 0;
+  }
+  .what_our_clients_say_page_slide_card_quote_icon {
+    top: 10%;
+    right: 7%;
+    width: 55px;
+  }
+  .what_our_clients_say_page_slide_card_rating_sec {
+    padding-top: 0px;
+    gap: 5px;
+  }
+  .what_our_clients_say_page_slide_card {
+    margin-top: 70px;
+    padding: 70px 8% 30px 7%;
+  }
+
+  .what_our_clients_say_page_slide_next_btn,
+  .what_our_clients_say_page_slide_prev_btn {
+    height: 50px;
+    width: 50px;
+  }
+  .insights_page_container > p {
+    font-size: 15px;
+    line-height: 1.62rem;
+    padding-bottom: 50px;
+  }
+  .insights_page_card1 > h3 {
+    padding-top: 15px;
+  }
+  .insights_page_card1 {
+    padding-bottom: 3%;
+    padding-left: 3%;
+  }
+  .insights_page_card2 > span {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  .insights_page_btn {
+    font-size: 14px;
+    margin-top: 50px;
+    padding: 10px 20px;
+  }
+  .learn_more_about_the_group_page_container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .learn_more_about_the_group_page_card {
+    width: 19%;
+    max-width: 260px;
+    padding: 25px 0;
+  }
+  .social_hub_page_container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .social_hub_slider_sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .gcc_expansion_container_page_text_sec > p {
+    font-size: 15px;
+    padding: 20px 0;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  .gcc_expansion_container_btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    letter-spacing: 0.06em;
+  }
+  .gcc_expansion_page_scroll_down_sec {
+    height: 130px;
+    width: 130px;
+  }
+  .gcc_expansion_page_scroll_down_mouse_logo {
+    width: 17px;
+  }
+  .build_leading_edge_img_sec_img1,
+  .build_leading_edge_img_sec_img2 {
+    height: auto;
+    width: 70%;
+  }
+  .build_leading_edge_img_sec_img1 {
+    padding-bottom: 80px;
+  }
+  .build_leading_edge_text_sec > p {
+    font-size: 15px;
+    line-height: 2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+  .build_leading_edge_count_card > span {
+    font-size: 1.5rem;
+    line-height: 1.61rem;
+  }
+  .build_leading_edge_count_card {
+    padding: 30px 0px;
+    width: 33%;
+    gap: 15px;
+  }
+  .build_leading_edge_count_card_logo1,
+  .build_leading_edge_count_card_logo2 {
+    height: auto;
+    width: 23%;
+  }
+  .build_leading_edge_count_card_logo3 {
+    width: 20%;
+  }
+  .build_leading_edge_container_page {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+  .ceo_message_page {
+    padding-bottom: 70px;
+    margin-top: -100px;
+  }
+  .ceo_message_text_content {
+    width: 50%;
+    padding: 60px 5%;
+  }
+  .ceo_message_profile {
+    width: 40%;
+  }
+  .ceo_message_text_content > p {
+    font-size: 16px;
+    padding-bottom: 25px;
+  }
+  .ceo_message_text_content > h4 {
+    font-size: 22px;
+    line-height: 2.5rem;
+  }
+  .ceo_message_text_content > h4 > span {
+    font-size: 15px;
+    line-height: 2.5rem;
+  }
+  .how_we_work_text_sec > h3 {
+    padding-bottom: 15px;
+  }
+  .how_we_work_text_sec > p {
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    line-height: 2rem;
+  }
+  .how_we_work_text_btn {
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.62rem;
+    letter-spacing: 0.06em;
+    padding: 11px 25px;
+  }
+  .how_we_work_main_page_btn_sec {
+    gap: 15px;
+    padding-bottom: 35px;
+  }
+  .how_we_work_container {
+    padding-bottom: 65px;
+  }
+  .sectors_main_page_container {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .sectors_head_text_sec > h3 {
+    font-size: 2.81rem;
+    padding-bottom: 15px;
+    line-height: 3.43rem;
+  }
+  .sectors_head_text_sec > p {
+    font-size: 14px;
+    line-height: 2rem;
+  }
+  .sectors_card_sec {
+    padding-top: 50px;
+  }
+  .sectors_card_img_background {
+    height: unset;
+    width: 120px;
+  }
+  .sectors_card_img_logo {
+    width: 60px;
+    bottom: 15px;
+  }
+  .sectors_card > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .sectors_card_btn {
+    font-size: 14px;
+    padding: 10px 14px;
+    letter-spacing: 0.06em;
+    border-radius: 7px;
+  }
+  .opportunities_map_img {
+    width: 55%;
+  }
+  .parisima_talent_main_page_container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .parisima_talent_background_image {
+    width: 70%;
+  }
+  .what_our_clients_say_page_slide_sec {
+    width: 50%;
+    height: 460px;
+  }
+  .what_our_clients_say_page_slide_card > p {
+    font-size: 15px;
+    line-height: 2rem;
+    padding: 20px 0;
+  }
+  .what_our_clients_say_page_text_sec > h3 {
+    font-size: 2.81rem;
+    line-height: 3.43rem;
+    padding-top: 20px;
+  }
+  .what_our_clients_say_page_text_sec > p {
+    font-size: 15px;
+    padding-top: 10px;
+    line-height: 2rem;
+  }
+  .what_our_clients_say_page_slide_card > h4 {
+    font-size: 1.65rem;
+    padding-top: 10px;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+  .what_our_clients_say_page_profile_sec {
+    padding-top: 15px;
+  }
+  .what_our_clients_say_page_profile_photo {
+    width: 60px;
+    margin-left: -25px;
+  }
+  .what_our_clients_say_page_rating_sec {
+    padding-top: 20px;
+    display: flex;
+    font-size: 17px;
+  }
+  .insights_page_container > p {
+    font-size: 15px;
+    line-height: 1.62rem;
+    padding-bottom: 35px;
+  }
+  .insights_page_container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .learn_more_about_the_group_page_card_img {
+    /* width: 70%; */
+    /* height: auto; */
+
+    height: auto;
+    max-width: 70%;
+  }
+  .learn_more_about_the_group_page_container > p {
+    font-size: 15px;
+    padding-top: 12px;
+    line-height: 2rem;
+  }
+  .learn_more_about_the_group_page_card_sec {
+    padding-top: 40px;
+    gap: 25px;
+  }
+  .social_hub_page_container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .social_hub_slider_sec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .social_hub_slider_btn {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .gcc_expansion_container_page_text_sec {
+    padding-top: 100px;
+    width: 50%;
+  }
+  .gcc_expansion_container_page_text_sec > h1 > br,
+  .gcc_expansion_container_page_text_sec > p > br {
+    display: none;
+  }
+  .gcc_expansion_container_page_text_sec > p {
+    font-size: 15px;
+    padding: 15px 0;
+    line-height: 2.5rem;
+    letter-spacing: 0.01rem;
+  }
+  .gcc_expansion_container_btn {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  .gcc_expansion_container_btn:hover > div > img {
+    transform: translateX(20px);
+  }
+  .gcc_expansion_page_scroll_down_sec {
+    height: 120px;
+    width: 120px;
+  }
+  .build_leading_edge_img_sec {
+    width: 50%;
+  }
+  .build_leading_edge_text_sec {
+    padding-top: 50px;
+    width: 45%;
+  }
+  .build_leading_edge_text_sec > h2 {
+    padding-bottom: 20px;
+    line-height: 3.5rem;
+  }
+  .build_leading_edge_text_sec > p {
+    font-size: 15px;
+    line-height: 2.5rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+  .build_leading_edge_text_btn {
+    font-size: 13px;
+    border-radius: 7px;
+    letter-spacing: 0.06em;
+    padding: 10px 16px;
+  }
+  .build_leading_edge_img_text_sec {
+    padding-bottom: 70px;
+  }
+  .build_leading_edge_count_card > span {
+    font-size: 1.5rem;
+    line-height: 1.61rem;
+    font-weight: 400;
+  }
+  .build_leading_edge_count_card_logo1,
+  .build_leading_edge_count_card_logo2 {
+    height: auto;
+    width: 21%;
+  }
+  .build_leading_edge_count_card_logo3 {
+    width: 18%;
+  }
+  .ceo_message_text_content {
+    width: 50%;
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ceo_message_profile {
+    width: 40%;
+  }
+  .ceo_message_text_content > p {
+    font-size: 15px;
+    padding-bottom: 25px;
+  }
+  .ceo_message_text_content > h4 {
+    font-size: 20px;
+    line-height: 2.5rem;
+  }
+  .ceo_message_text_content > h4 > span {
+    font-size: 14px;
+    line-height: 2.5rem;
+  }
+  .ceo_message_page {
+    padding-bottom: 50px;
+    margin-top: -100px;
+  }
+  .how_we_work_text_sec > p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    line-height: 2.5rem;
+  }
+  .how_we_work_text_btn {
+    border-radius: 7px;
+    font-size: 13px;
+    padding: 10px 18px;
+  }
+  .how_we_work_container {
+    padding-bottom: 45px;
+  }
+  .sectors_main_page_container {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .sectors_head_text_sec > p {
+    font-size: 14px;
+    line-height: 2.5rem;
+  }
+  .sectors_card_img_background {
+    height: unset;
+    width: 100px;
+  }
+  .sectors_card_img_logo {
+    width: 50px;
+    bottom: 10px;
+  }
+  .sectors_card > h3 {
+    padding-top: 15px;
+  }
+  .sectors_card > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.3rem;
+    padding-top: 9px;
+    padding-bottom: 15px;
+  }
+  .sectors_card_btn {
+    font-size: 13px;
+    padding: 9px 11px;
+    border-radius: 6px;
+}
 }
