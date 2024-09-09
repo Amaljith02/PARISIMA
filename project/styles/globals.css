@@ -5,14 +5,17 @@
   padding: 0;
   scrollbar-width: none;
 }
+
 html {
   font-size: 100%;
   /* line-height: 100% !important; */
 }
+
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+
 .pt-sans {
   font-family: "PT Sans", sans-serif;
 }
@@ -20,14 +23,17 @@ body {
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }
+
 .container {
   max-width: 1600px;
   width: 100%;
   margin: auto;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -38,6 +44,7 @@ p {
   padding: 0;
   /* background-color: aqua; */
 }
+
 .swiper-slide {
   opacity: 1;
 }
@@ -53,28 +60,29 @@ p {
     opacity: 0;
   }
 }
+
 .swiper-3d .swiper-slide-shadow {
   background: rgba(255, 255, 255, 0) !important;
 }
+
 .swiper-pagination-bullet {
   margin: 10px 0 !important;
-  width: var(
-    --swiper-pagination-bullet-width,
-    var(--swiper-pagination-bullet-size, 14px)
-  ) !important;
-  height: var(
-    --swiper-pagination-bullet-height,
-    var(--swiper-pagination-bullet-size, 14px)
-  ) !important;
+  width: var(--swiper-pagination-bullet-width,
+      var(--swiper-pagination-bullet-size, 14px)) !important;
+  height: var(--swiper-pagination-bullet-height,
+      var(--swiper-pagination-bullet-size, 14px)) !important;
 }
+
 .swiper-pagination-bullet {
   opacity: var(--swiper-pagination-bullet-opacity, 1) !important;
   background: var(--swiper-pagination-color, #ffffff) !important;
 }
+
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(--swiper-pagination-color, #00b4b5) !important;
 }
+
 /* ----button Right Arrow icon ----- */
 /* <div className="button_right_arrow_img">
 <Image
@@ -95,7 +103,8 @@ p {
   gap: 15px;
   transition: all 0.3s ease;
 }
-.button_right_arrow_img > img {
+
+.button_right_arrow_img>img {
   height: auto;
   width: 100%;
   object-fit: cover;
@@ -110,56 +119,62 @@ p {
     padding-right: 5%;
     width: 100%;
   }
-  .swiper-vertical > .swiper-pagination-bullets,
+
+  .swiper-vertical>.swiper-pagination-bullets,
   .swiper-pagination-vertical.swiper-pagination-bullets {
     right: var(--swiper-pagination-right, 5%) !important;
   }
 }
+
 @media screen and (max-width: 1600px) {
   html {
     font-size: 90%;
   }
 }
+
 @media screen and (max-width: 1440px) {
   html {
     font-size: 80%;
   }
+
   .swiper-pagination-bullet {
     margin: 10px 0 !important;
-    width: var(
-      --swiper-pagination-bullet-width,
-      var(--swiper-pagination-bullet-size, 12px)
-    ) !important;
-    height: var(
-      --swiper-pagination-bullet-height,
-      var(--swiper-pagination-bullet-size, 12px)
-    ) !important;
+    width: var(--swiper-pagination-bullet-width,
+        var(--swiper-pagination-bullet-size, 12px)) !important;
+    height: var(--swiper-pagination-bullet-height,
+        var(--swiper-pagination-bullet-size, 12px)) !important;
   }
+
   .button_right_arrow_img {
     width: 15px;
     padding-left: 5px;
   }
 }
+
 @media screen and (max-width: 1366px) {
   html {
     font-size: 70%;
   }
 }
+
 @media screen and (max-width: 1280px) {
   html {
     font-size: 60%;
   }
+
   .button_right_arrow_img {
     width: 12px;
     padding-left: 5px;
     gap: 10px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 50%;
   }
 }
+
 @media screen and (max-width: 820px) {
   html {
     font-size: 40%;

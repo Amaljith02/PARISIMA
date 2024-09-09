@@ -96,15 +96,15 @@ const Index = () => {
                   alt=""
                 />
               </div>
-            </div>
-            {/* ------Bottom Linear Gradient------- */}
-            <div className={home.gcc_linear_background}>
-              <Image
-                src={"/images/gcc-gradient-back.png"}
-                height={387}
-                width={1920}
-                alt=""
-              />
+              {/* ------Bottom Linear Gradient------- */}
+              <div className={home.gcc_linear_background}>
+                <Image
+                  src={"/images/gcc-gradient-back.png"}
+                  height={387}
+                  width={1920}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -1385,8 +1385,16 @@ const Index = () => {
             <Swiper
               pagination={false}
               modules={[Pagination, Navigation]}
-              slidesPerView={4}
+              spaceBetween={50}
+              slidesPerView={3}
               breakpoints={{
+                1025: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1290: {
+                  spaceBetween: 50,
+                },
                 1450: {
                   slidesPerView: 5,
                 },
@@ -1395,7 +1403,6 @@ const Index = () => {
                 prevEl: "#social_hub_slider_prev_btn",
                 nextEl: "#social_hub_slider_next_btn",
               }}
-              spaceBetween={50}
               speed={1000}
               // loop={true}
               className="mySwiper"
