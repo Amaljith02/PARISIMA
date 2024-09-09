@@ -413,7 +413,7 @@
     z-index: 1;
     animation: hamburger_drop 0.4s ease-in-out;
   }
-  
+
   @keyframes hamburger_drop {
     from {
       opacity: 0;
@@ -444,7 +444,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 16px;
     color: black;
 
   }
@@ -464,12 +465,23 @@
 
   .hamb_nav_dropdown_menu_list>li>a {
     color: black;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
+    font-size: 15px;
     font-weight: 600;
   }
 
   .hamb_nav_menu_down_arrow_icon {
     filter: invert(1);
     display: flex;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .nav_top_link_icon {
+    width: 13px;
+  }
+
+  .nav_top_body_content_sec {
+    gap: 17px;
   }
 }

@@ -196,8 +196,34 @@
   .footer_connect_us_logo {
     gap: 10px;
   }
+
   .footer_main_body_container {
     padding-top: 45px;
     padding-bottom: 60px;
+  }
 }
+
+@media screen and (max-width:950px) {
+
+  .footer_bottom_container>h4 {
+    font-size: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (max-width:820px) {
+  .footer_main_body_container {
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+
+  .footer_logo {
+    width: 140px;
+  }
+
+  .footer_list {
+    gap: 7px;
+  }
+
 }

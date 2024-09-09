@@ -350,35 +350,7 @@ const Index = () => {
       {/* --------How we work page starts-------------- */}
       <div className={home.how_we_work_main_page}>
         <div className={`${home.how_we_work_container} container`}>
-          <div className={home.how_we_work_main_page_btn_sec}>
-            <button
-              className={home.how_we_work_main_page_btn}
-              id="how_we_work_previous_btn"
-            >
-              <div className={home.how_we_work_main_page_btn_img}>
-                <Image
-                  src={"/images/btn-arrow.png"}
-                  height={14}
-                  width={7}
-                  alt=""
-                  style={{ transform: "rotate(180deg)" }}
-                />
-              </div>{" "}
-            </button>
-            <button
-              className={home.how_we_work_main_page_btn}
-              id="how_we_work_next_btn"
-            >
-              <div className={home.how_we_work_main_page_btn_img}>
-                <Image
-                  src={"/images/btn-arrow.png"}
-                  height={14}
-                  width={7}
-                  alt=""
-                />
-              </div>{" "}
-            </button>
-          </div>
+
 
           <div className={home.how_we_work_text_sec}>
             <h3 className="pt-sans" data-aos="fade-left">
@@ -407,14 +379,48 @@ const Index = () => {
             </Link>
           </div>
           <div className={home.how_we_work_swiper_sec}>
+            <div className={home.how_we_work_main_page_btn_sec}>
+              <button
+                className={home.how_we_work_main_page_btn}
+                id="how_we_work_previous_btn"
+              >
+                <div className={home.how_we_work_main_page_btn_img}>
+                  <Image
+                    src={"/images/btn-arrow.png"}
+                    height={14}
+                    width={7}
+                    alt=""
+                    style={{ transform: "rotate(180deg)" }}
+                  />
+                </div>{" "}
+              </button>
+              <button
+                className={home.how_we_work_main_page_btn}
+                id="how_we_work_next_btn"
+              >
+                <div className={home.how_we_work_main_page_btn_img}>
+                  <Image
+                    src={"/images/btn-arrow.png"}
+                    height={14}
+                    width={7}
+                    alt=""
+                  />
+                </div>{" "}
+              </button>
+            </div>
             <Swiper
-              slidesPerView={2}
+              slidesPerView={1}
               spaceBetween={30}
               loop={true}
               className="mySwiper"
               navigation={{
                 nextEl: "#how_we_work_next_btn",
                 prevEl: "#how_we_work_previous_btn",
+              }}
+              breakpoints={{
+                955: {
+                  slidesPerView: 2
+                }
               }}
               modules={[Navigation]}
             >
@@ -454,7 +460,7 @@ const Index = () => {
                 <div className={home.how_we_work_swiper_card}>
                   <div className={home.how_we_work_swiper_card_img}>
                     <Image
-                      src={"/images/how-we-work1.png"}
+                      src={"/images/how-we-work3.png"}
                       height={400}
                       width={600}
                       alt=""
@@ -1385,7 +1391,7 @@ const Index = () => {
             <Swiper
               pagination={false}
               modules={[Pagination, Navigation]}
-              spaceBetween={50}
+              spaceBetween={20}
               slidesPerView={3}
               breakpoints={{
                 1025: {

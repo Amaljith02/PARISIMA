@@ -4,10 +4,10 @@
   width: 100%;
   background-color: #1f3444;
   overflow-y: hidden !important;
+  position: relative;
 }
 
 .gcc_expansion_swiper_page {
-  position: relative;
   height: 100vh;
   width: 100%;
 }
@@ -128,7 +128,7 @@
   /* background-color: red; */
   transform: translateX(-50%);
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   z-index: 5;
   background-size: cover;
   object-fit: cover;
@@ -2314,6 +2314,8 @@
   .gcc_expansion_container_btn {
     padding: 10px 15px;
     font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px;
   }
 
   .gcc_expansion_container_btn:hover>div>img {
@@ -2620,27 +2622,20 @@
   }
 }
 
-@media screen and (max-width:1024px) {
-  .gcc_expansion_page {
-    height: 75vh;
-  }
-
-  .gcc_expansion_container_page_img {
-    width: 50%;
-    height: 75vh;
-
+@media screen and (max-width: 1024px) {
+  .gcc_expansion_swiper_page {
+    height: 700px;
   }
 
   .gcc_expansion_container_page {
-    width: 100%;
-    height: 75vh;
+    height: 700px;
   }
 
   .gcc_expansion_page_scroll_down_sec {
     height: 110px;
     width: 110px;
     z-index: 1;
-    bottom: 20%;
+    bottom: 0%;
   }
 
   .gcc_expansion_page_scroll_down_mouse_logo {
@@ -2704,7 +2699,7 @@
 
   .how_we_work_main_page_btn_sec {
     gap: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 
   .how_we_work_main_page_btn {
@@ -2873,5 +2868,620 @@
   .social_hub_page_container {
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .gcc_expansion_swiper_page {
+    height: 600px;
+  }
+
+  .gcc_expansion_container_page {
+    height: 600px;
+  }
+
+  .gcc_expansion_container_page_img {
+    height: 100%;
+    width: 60%;
+  }
+
+  .gcc_expansion_container_page_text_sec>h1 {
+    line-height: unset;
+  }
+
+  .gcc_expansion_container_page_text_sec>p {
+    font-size: 14px;
+    padding: 13px 0;
+    line-height: unset;
+    letter-spacing: 0.01rem;
+  }
+
+  .gcc_expansion_container_btn {
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  .build_leading_edge_img_sec {
+    width: 45%;
+  }
+
+  .build_leading_edge_img_sec_img1,
+  .build_leading_edge_img_sec_img2 {
+    height: auto;
+    width: 85%;
+  }
+
+  .build_leading_edge_text_sec {
+    padding-top: 50px;
+    width: 50%;
+  }
+
+  .build_leading_edge_text_sec>h2 {
+    padding-bottom: 10px;
+    line-height: unset;
+  }
+
+  .build_leading_edge_text_sec>p {
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 10px;
+  }
+
+  .build_leading_edge_img_text_sec {
+    padding-bottom: 25px;
+  }
+
+  .build_leading_edge_container_page {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  .ceo_message_page {
+    padding-bottom: 50px;
+    margin-top: -75px;
+  }
+
+  .ceo_message_text_content>h3 {
+    padding-bottom: 10px;
+  }
+
+  .ceo_message_text_content>p {
+    font-size: 14px;
+    padding-bottom: 15px;
+    line-height: 21px;
+    letter-spacing: 0.05rem;
+  }
+
+  .ceo_message_text_content>h4 {
+    font-size: 17px;
+    line-height: 3rem;
+  }
+
+  .ceo_message_text_content>h4>span {
+    font-size: 12px;
+    line-height: 2.5rem;
+  }
+
+  .ceo_message_text_content {
+    width: 50%;
+    padding: 35px 5%;
+  }
+
+  .how_we_work_text_sec {
+    width: 50%;
+    padding-right: 3%;
+  }
+
+  .how_we_work_swiper_sec {
+    width: 50%;
+  }
+
+  .how_we_work_swiper_card>h3 {
+    font-size: 21px;
+    line-height: 2.42rem;
+  }
+
+  .how_we_work_text_sec>p {
+    font-size: 13px;
+    padding-bottom: 15px;
+    line-height: 21px;
+  }
+
+  .sectors_head_text_sec>p {
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .sectors_card>p {
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 19px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .sectors_card>h3 {
+    padding-top: 15px;
+    font-size: 15px;
+  }
+
+  .sectors_card_img_background {
+    width: 110px;
+  }
+
+  .sectors_card_img_logo {
+    width: 55%;
+    bottom: 10px;
+  }
+
+  .sectors_head_view_all_btn {
+    font-size: 13px;
+    padding: 10px 13px;
+    border-radius: 6px;
+  }
+
+  .sectors_main_page_container {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  .sectors_head_text_sec>h3 {
+    font-size: 21px;
+    padding-bottom: 10px;
+    line-height: 3.43rem;
+  }
+
+  .build_leading_edge_text_sec>h2,
+  .opportunities_text_sec>h3,
+  .what_our_clients_say_title,
+  .insights_page_title,
+  .learn_more_about_the_group_page_container>h3,
+  .social_hub_page_container>h3 {
+    font-size: 21px;
+  }
+
+  .opportunities_text_sec_btn {
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 11px 13px;
+    font-weight: 500;
+  }
+
+  .opportunities_map_sec {
+    padding-top: 40px;
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .opportunities_map_btn_group {
+    padding-top: 20px;
+  }
+
+  .what_our_clients_say_page_text_sec>p {
+    font-size: 13px;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+
+  .what_our_clients_say_page_slide_card>p {
+    font-size: 13px;
+    line-height: 19px;
+    padding: 10px 0;
+  }
+
+  .what_our_clients_say_page_slide_card {
+    margin-top: 50px;
+    padding: 50px 8% 30px 8%;
+  }
+
+  .what_our_clients_say_page_slide_prev_btn {
+    left: -20px;
+  }
+
+  .what_our_clients_say_page_slide_next_btn {
+    right: -20px;
+  }
+
+  .what_our_clients_say_page_slide_card_quote_icon {
+    top: 9%;
+    right: 6%;
+    width: 35px;
+  }
+
+  .insights_page_card1 {
+    width: 55%;
+  }
+
+  .insights_page_card2 {
+    width: 42%;
+  }
+
+  .insights_page_card2>h3 {
+    padding-top: 8px;
+    line-height: unset;
+    font-size: 17px;
+  }
+
+  .insights_page_card2>p {
+    font-size: 13px;
+    padding-top: 5px;
+    line-height: unset;
+  }
+
+  .insights_page_card1>h3 {
+    padding-top: 10px;
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+    font-size: 16px;
+    line-height: unset;
+  }
+
+  .insights_page_btn {
+    font-size: 13px;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 11px 15px;
+  }
+
+  .learn_more_about_the_group_page_container>p {
+    font-size: 13px;
+    padding-top: 12px;
+    line-height: unset;
+  }
+
+  .learn_more_about_the_group_page_card_img {
+    max-width: 65%;
+  }
+
+  .social_hub_slider_btn {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width:820px) {
+
+  .gcc_expansion_swiper_page {
+    height: 500px;
+  }
+
+  .gcc_expansion_container_page {
+    height: 500px;
+  }
+
+  .gcc_expansion_container_page_text_sec>p {
+    font-size: 13px;
+    padding: 13px 0;
+    line-height: 19px;
+    letter-spacing: 0.01rem;
+  }
+
+  .gcc_expansion_page_scroll_down_sec {
+    height: 95px;
+    width: 95px;
+  }
+
+  .gcc_expansion_page_scroll_down_mouse_logo {
+    width: 13px;
+  }
+
+  .gcc_expansion_container_btn {
+    padding: 11px 13px;
+    font-size: 13px;
+  }
+
+  .build_leading_edge_text_sec>h2,
+  .opportunities_text_sec>h3,
+  .ceo_message_text_content>h3,
+  .how_we_work_text_sec>h3,
+  .what_our_clients_say_title,
+  .insights_page_title,
+  .sectors_head_text_sec>h3,
+  .learn_more_about_the_group_page_container>h3,
+  .social_hub_page_container>h3,
+  .parisima_talent_page_text_sec {
+    font-size: 20px;
+    line-height: unset;
+  }
+
+  .build_leading_edge_text_sec>p {
+    font-size: 13px;
+    line-height: 21px;
+    padding-bottom: 5px;
+  }
+
+  .build_leading_edge_text_btn {
+    font-size: 13px;
+    border-radius: 5px;
+    letter-spacing: 0.06em;
+    padding: 9px 13px;
+    margin-top: 15px;
+  }
+
+  .build_leading_edge_count_card>span>h3 {
+    font-size: 25px;
+  }
+
+  .build_leading_edge_count_card>span {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ceo_message_sub_page {
+    border-radius: 20px;
+  }
+
+  .ceo_message_text_content>p {
+    font-size: 13px;
+    padding-bottom: 15px;
+    line-height: 21px;
+    letter-spacing: 0.05rem;
+  }
+
+  .ceo_message_text_content>h4 {
+    font-size: 16px;
+    line-height: unset;
+  }
+
+  .how_we_work_swiper_card>h3 {
+    font-size: 19px;
+    line-height: unset;
+  }
+
+  .sectors_card_sec {
+    padding-top: 25px;
+  }
+
+  .opportunities_text_sec>p {
+    font-size: 13px;
+    padding-top: 13px;
+    padding-bottom: 20px;
+    line-height: unset;
+  }
+
+  .opportunities_map_img {
+    width: 45%;
+  }
+
+  .what_our_clients_say_page_text_sec>h3 {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .what_our_clients_say_page_text_sec {
+    width: 45%;
+  }
+
+  .what_our_clients_say_page_slide_card_profile {
+    top: -30px;
+    width: 60px;
+  }
+
+  .what_our_clients_say_page_slide_card>p {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px 0;
+  }
+
+  .what_our_clients_say_page_slide_next_btn,
+  .what_our_clients_say_page_slide_prev_btn {
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+  }
+
+  .what_our_clients_say_page_slide_next_btn {
+    right: -18px;
+  }
+
+  .what_our_clients_say_page_slide_prev_btn {
+    left: -18px;
+  }
+
+  .insights_page_card2>h3 {
+    padding-top: 5px;
+    line-height: unset;
+    font-size: 16px;
+  }
+
+  .insights_page_card2>span {
+    font-size: 13px;
+    padding-top: 10px;
+    line-height: unset;
+  }
+
+  .insights_page_card1>span {
+    font-size: 13px;
+  }
+
+  .learn_more_about_the_group_page_container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .gcc_expansion_container_page_text_sec>h1 {
+    line-height: unset;
+    font-size: 22px;
+  }
+
+  .gcc_expansion_container_page_text_sec>p {
+    font-size: 13px;
+    padding: 11px 0;
+    line-height: 19px;
+  }
+
+  .build_leading_edge_text_sec>h2,
+  .opportunities_text_sec>h3,
+  .ceo_message_text_content>h3,
+  .how_we_work_text_sec>h3,
+  .what_our_clients_say_title,
+  .insights_page_title,
+  .sectors_head_text_sec>h3,
+  .learn_more_about_the_group_page_container>h3,
+  .social_hub_page_container>h3,
+  .parisima_talent_page_text_sec {
+    font-size: 17px;
+    line-height: unset;
+  }
+
+  .build_leading_edge_text_sec>p {
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 0;
+  }
+
+  .build_leading_edge_text_btn {
+    font-size: 13px;
+    border-radius: 5px;
+    letter-spacing: 0;
+    padding: 9px 13px;
+    margin-top: 10px;
+  }
+
+  .build_leading_edge_img_text_sec {
+    padding-bottom: 10px;
+  }
+
+  .build_leading_edge_container_page {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .ceo_message_page {
+    padding-bottom: 44px;
+    margin-top: -40px;
+  }
+
+  .ceo_message_text_content>p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height: 19px;
+    letter-spacing: 0;
+  }
+
+  .ceo_message_text_content>h4 {
+    font-size: 14px;
+    line-height: unset;
+  }
+
+  .ceo_message_text_content>h4>span {
+    font-size: 11px;
+    line-height: 2.5rem;
+  }
+
+  .how_we_work_text_sec>p {
+    font-size: 13px;
+    padding-bottom: 15px;
+    line-height: 19px;
+  }
+
+  .how_we_work_swiper_card>h3 {
+    font-size: 16px;
+    line-height: unset;
+  }
+
+  .how_we_work_text_btn {
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .how_we_work_main_page_btn {
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+  }
+
+  .how_we_work_main_page_btn_img {
+    width: 7px;
+  }
+
+  .sectors_main_page_container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .sectors_card {
+    width: 23%;
+
+  }
+
+  .sectors_card_img_background {
+    width: 100px;
+  }
+
+  .sectors_card>h3 {
+    padding-top: 15px;
+    font-size: 14px;
+  }
+
+  .sectors_card>p {
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 19px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .sectors_card_btn {
+    font-size: 12px;
+    padding: 9px 9px;
+    letter-spacing: 0;
+    border-radius: 4px;
+  }
+
+  .opportunities_main_page_container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .opportunities_text_sec_btn {
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 10px 11px;
+    font-weight: 500;
+  }
+
+  .opportunities_map_btn {
+    margin: 0 10px;
+    padding: 11px 14px;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+
+  .what_our_clients_say_page_rating_sec {
+    padding-top: 15px;
+    font-size: 14px;
+  }
+
+  .insights_page_container>p {
+    font-size: 14px;
+    line-height: unset;
+    padding-bottom: 30px;
+  }
+
+  .insights_page_card1 {
+    width: 48%;
+    padding-right: 3%;
+  }
+
+  .insights_page_card2 {
+    width: 49%;
+  }
+
+  .insights_page_card1>h3 {
+    padding-top: 7px;
+    letter-spacing: 0.02rem;
+    font-size: 15px;
   }
 }
