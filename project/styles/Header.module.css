@@ -481,7 +481,25 @@
     width: 13px;
   }
 
+  .nav_top_body {
+    display: none;
+  }
+
   .nav_top_body_content_sec {
     gap: 17px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav_top_body_content_sec {
+    gap: 10px;
+  }
+
+  .nav_top_register_btn_ {
+    padding: 8px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    gap: 6px;
+    letter-spacing: 0;
   }
 }

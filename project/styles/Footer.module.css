@@ -227,3 +227,16 @@
   }
 
 }
+
+@media screen and (max-width:600px) {
+  .footer_menu_sec {
+    width: 100%;
+    padding-top: 35px;
+  }
+
+  .footer_main_body_container {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    flex-direction: column;
+  }
+}

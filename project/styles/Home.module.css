@@ -985,7 +985,7 @@
 
 .what_our_clients_say_page_rating_sec {
   padding-top: 30px;
-  display: flex;
+  display: inline-flex;
   font-size: 18px;
   align-items: center;
   /* font-size: 1.12rem; */
@@ -2243,7 +2243,6 @@
 
   .what_our_clients_say_page_rating_sec {
     padding-top: 20px;
-    display: flex;
     font-size: 17px;
   }
 
@@ -3434,8 +3433,8 @@
   }
 
   .sectors_card_btn {
-    font-size: 12px;
-    padding: 9px 9px;
+    font-size: 13px;
+    padding: 9px 12px;
     letter-spacing: 0;
     border-radius: 4px;
   }
@@ -3446,10 +3445,12 @@
   }
 
   .opportunities_text_sec_btn {
-    font-size: 12px;
+    font-size: 13px;
     border-radius: 5px;
-    padding: 10px 11px;
-    font-weight: 500;
+    padding: 12px 12px;
+    font-weight: 600;
+
+    /* background-color: red; */
   }
 
   .opportunities_map_btn {
@@ -3483,5 +3484,211 @@
     padding-top: 7px;
     letter-spacing: 0.02rem;
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .build_leading_edge_text_sec>h2,
+  .opportunities_text_sec>h3,
+  .ceo_message_text_content>h3,
+  .how_we_work_text_sec>h3,
+  .what_our_clients_say_title,
+  .insights_page_title,
+  .sectors_head_text_sec>h3,
+  .learn_more_about_the_group_page_container>h3,
+  .social_hub_page_container>h3,
+  .parisima_talent_page_text_sec {
+    font-size: 20px;
+    line-height: unset;
+  }
+
+
+  .gcc_expansion_container_page_img {
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    right: 0;
+  }
+
+  .gcc_expansion_container_page_text_sec {
+    padding-top: 100px;
+    width: 80%;
+  }
+
+  .gcc_expansion_container_btn {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  .gcc_expansion_page_scroll_down_sec {
+    height: 90px;
+    width: 90px;
+  }
+
+  .gcc_expansion_page_scroll_down_mouse_logo {
+    width: 12px;
+  }
+
+  .build_leading_edge_img_text_sec {
+    padding-bottom: 10px;
+    flex-direction: column;
+  }
+
+  .build_leading_edge_text_sec {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .build_leading_edge_img_sec {
+    width: 70%;
+  }
+
+  .build_leading_edge_count_card {
+    padding: 30px 0px;
+    width: 33%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .build_leading_edge_text_sec>p {
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  .build_leading_edge_count_card>span {
+    font-size: 14px;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .build_leading_edge_count_card>span>h3 {
+    text-align: center;
+  }
+
+  .build_leading_edge_count_card_logo3 {
+    width: 30%;
+  }
+
+  .build_leading_edge_count_card_logo1,
+  .build_leading_edge_count_card_logo2 {
+    height: auto;
+    width: 33%;
+  }
+
+  .ceo_message_profile {
+    width: 100%;
+  }
+
+  .ceo_message_text_content {
+    width: 100%;
+    padding: 35px 5%;
+    box-sizing: border-box;
+  }
+
+  .ceo_message_sub_page {
+    border-radius: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .how_we_work_container {
+    padding-bottom: 45px;
+    flex-direction: column;
+  }
+
+  .parisima_talent_background_image {
+    width: 100%;
+  }
+
+  .parisima_talent_page_text_sec {
+    left: unset;
+    width: 80%;
+    bottom: 10%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.11);
+  }
+
+  .parisima_talent_main_page_container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .how_we_work_text_sec {
+    width: 100%;
+    padding-right: 3%;
+  }
+
+  .how_we_work_swiper_sec {
+    width: 100%;
+  }
+
+  .sectors_card_sec {
+    padding-top: 0px;
+    flex-wrap: wrap;
+  }
+
+  .sectors_card {
+    width: 49%;
+    margin-top: 40px;
+  }
+
+  .sectors_card>p {
+    padding: 10px 5%;
+    box-sizing: border-box;
+  }
+
+  .sectors_main_page_container {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .what_our_clients_say_page_content_container {
+    padding-top: 15px;
+    flex-direction: column;
+  }
+
+  .what_our_clients_say_page_text_sec {
+    width: 100%;
+  }
+
+  .what_our_clients_say_page_slide_sec {
+    width: 90%;
+    height: 360px;
+  }
+
+  .insights_page_card_sec {
+    gap: 3%;
+    row-gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .insights_page_card1 {
+    width: 100%;
+    padding-right: 3%;
+  }
+
+  .insights_page_card1 {
+    width: 100%;
+    padding-top: 250px;
+    padding-right: 3%;
+  }
+
+  .insights_page_card2 {
+    width: 100%;
+  }
+
+  .learn_more_about_the_group_page_card_sec {
+    padding-top: 30px;
+    gap: 1%;
+  }
+
+  .learn_more_about_the_group_page_card {
+    width: 24%;
+    max-width: 260px;
+    padding: 25px 0;
   }
 }
